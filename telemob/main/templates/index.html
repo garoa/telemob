@@ -1,0 +1,22 @@
+<html>
+
+<script type="text/javascript">
+function filter(){
+    var ufs = document.getElementById("uf");
+    var uf = ufs.options[ufs.selectedIndex].value;
+    window.location.href = 'politicos/1/'+uf;
+}
+</script>
+
+<h2>{{campaign.name}}</h2>
+<br>
+<p>{{campaign.description}}</p>
+<p>Escolha seu estado
+<select id='uf'>
+{% for uf, estado in uf_list %}
+    <option value="{{uf}}">{{estado}}</option>
+{% endfor %}
+</select>
+<a href="#" onclick="filter();">Filtrar</button>
+
+</html>

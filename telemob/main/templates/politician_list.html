@@ -1,0 +1,25 @@
+<html>
+<p>Lista de políticos do seu estado.</p>
+<table border='1'>
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Nome Parlamentar</th>
+            <th>Partido</th>
+            <th>Categoria</th>
+            <th>Estado</th>
+        </tr>
+    </thead>
+    <tbody>
+    {% for politician in politician_list %}
+        <tr>
+            <td><a href="{% url 'report_contact' campaign.id politician.id %}">{{ politician.name|truncatechars:20 }}</a></td>
+            <td>{{ politician.parliamentary_name|truncatechars:20 }}</td>
+            <td>{{ politician.political_party }}</td>
+            <td>{{ politician.category }}</td>
+            <td>{{ politician.uf }}</td>
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>
+</html>

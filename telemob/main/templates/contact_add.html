@@ -1,0 +1,12 @@
+<html>
+<form action="" method="post">
+    {% csrf_token %}
+    <p>Informe como entrou en contato com o político e qual a resposta!</p>
+    <br/>
+    {{form.as_p}}
+    <div>
+        <a href="/contacts/contact/">Cancelar</a>
+        <button type="submit">Adicionar</button>
+    </div>
+</form>
+</html>
