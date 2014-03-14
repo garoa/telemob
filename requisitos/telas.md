@@ -1,4 +1,5 @@
-=== Tela 1: Entrada
+Tela 1: Entrada
+===============================
 
 Exibe: 
 
@@ -12,7 +13,8 @@ Ação:
 
 * O usuário clica em uma unidade da federação e vai para a lista de deputados (futuramente poderá ser a lista de senadores, conforme configurado na campanha ativa)
 
-=== Tela 2: Lista de Congressistas
+Tela 2: Lista de Congressistas
+=============================== 
 
 Exibe:
 
@@ -24,7 +26,8 @@ Ação:
 
 * O usuário clica em um deputado e vai para a Tela de Ligação
 
-=== Tela: Apoio à Ligação
+Tela: Apoio à Ligação
+===============================
 
 Exibe:
 
