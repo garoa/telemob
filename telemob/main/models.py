@@ -11,6 +11,9 @@ class Campaign(models.Model):
     date_created = models.DateField('Criado em', auto_now_add=True)
     last_updated = models.DateField('Última atualização em', auto_now=True)
 
+    class Meta:
+        verbose_name = 'Campanha'
+
     def __unicode__(self):
         return self.name
 
@@ -51,23 +54,69 @@ class Politician(models.Model):
         ('SDD ', 'SDD - Solidariedade'),
     )
 
+    CATEGORY_CHOICES = (
+        ('titular', 'Titular'),
+        ('suplente', 'Suplente'),
+        ('efetivo', 'Efetivo')
+    )
+
     name = models.CharField('Nome', max_length=150)
+    political_party = models.CharField('Partido', choices=PARTY_CHOICES, max_length=10)
+    uf = models.CharField('UF', choices=STATE_CHOICES, max_length=10)
+    category = models.CharField('Categoria', choices=CATEGORY_CHOICES, max_length=20)
+    annex = models.IntegerField('Anexo', blank=True, null=True)
+    chamber = models.IntegerField('Gabinete', blank=True, null=True)
     tel = models.CharField('Telefone', max_length=20)
+    fax = models.CharField('Fax', max_length=20)
     email = models.EmailField('Email', max_length=100)
-    uf = models.CharField(choices=STATE_CHOICES, max_length=10)
-    political_party = models.CharField(choices=PARTY_CHOICES, max_length=10)
     date_created = models.DateField('Criado em', auto_now_add=True)
     last_updated = models.DateField('Última atualização em', auto_now=True)
+
+    class Meta:
+        verbose_name = 'Político'
+
+    def __unicode__(self):
+        return self.name
 
 
 class Contact(models.Model):
 
     CONTACT_CHOICES = (
         ('tel', 'Telefone'),
+        ('fax', 'Fax'),
         ('email', 'E-mail')
+    )
+
+    RESULT_CHOICES = (
+        ('answered', 'Falei com uma pessoa'),
+        ('message', 'Deixei um recado'),
+        ('busy', 'Número ocupado'),
+        ('unanswered', 'Ninguém atendeu.'),
+        ('error', 'Número inexistente ou outra falha')
     )
 
     politician = models.OneToOneField(Politician)
     campaign = models.OneToOneField(Campaign)
     contacted_by = models.CharField(choices=CONTACT_CHOICES, max_length=10)
+    result = models.CharField(choices=RESULT_CHOICES, max_length=10)
     date_created = models.DateField('Criado em', auto_now_add=True)
+
+    class Meta:
+        verbose_name = 'Contato'
+
+    def __unicode__(self):
+        return '%s - %s' % (self.campaign.name, self.politician.name)
+
+class HelpText(models.Model):
+    campaign = models.ForeignKey(Campaign, verbose_name="Texto de ajuda para a campanha")
+    name = models.CharField('Nome da Ajuda', max_length=150)
+    description = models.TextField('Texto de Ajuda')
+    date_created = models.DateField('Criado em', auto_now_add=True)
+    last_updated = models.DateField('Última atualização em', auto_now=True)
+
+    class Meta:
+        verbose_name = 'Texto de Ajuda'
+        verbose_name_plural = 'Textos de Ajuda'
+
+    def __unicode__(self):
+        return self.name

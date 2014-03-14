@@ -2,7 +2,7 @@
 
 from django.contrib import admin
 
-from .models import Campaign, Contact, Politician
+from .models import Campaign, Contact, Politician, HelpText
 
 
 class CampaignAdmin(admin.ModelAdmin):
@@ -29,7 +29,16 @@ class PoliticianAdmin(admin.ModelAdmin):
         'political_party',
     )
 
+class HelpTextAdmin(admin.ModelAdmin):
+
+    list_display = (
+        'name',
+        'campaign',
+        'date_created',
+    )
+
 
 admin.site.register(Campaign, CampaignAdmin)
 admin.site.register(Contact, ContactAdmin)
 admin.site.register(Politician, PoliticianAdmin)
+admin.site.register(HelpText, HelpTextAdmin)
