@@ -13,8 +13,8 @@ from .models import Campaign, Politician, Contact
 def index(request):
     try:
         campaign = Campaign.objects.get(id=1)
-    except Campaign.DoesNotExists:
-        pass
+    except Campaign.DoesNotExist:
+        campaign = {}
 
     return render_to_response(
         'index.html', {
