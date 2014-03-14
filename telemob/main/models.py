@@ -95,8 +95,8 @@ class Contact(models.Model):
         ('error', 'Número inexistente ou outra falha')
     )
 
-    politician = models.OneToOneField(Politician)
-    campaign = models.OneToOneField(Campaign)
+    politician = models.ForeignKey(Politician, verbose_name='Político')
+    campaign = models.ForeignKey(Campaign, verbose_name='Campanha')
     contacted_by = models.CharField(choices=CONTACT_CHOICES, max_length=10)
     result = models.CharField(choices=RESULT_CHOICES, max_length=10)
     date_created = models.DateField('Criado em', auto_now_add=True)
