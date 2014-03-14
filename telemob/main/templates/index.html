@@ -1,25 +1,26 @@
 {% extends 'base.html' %}
+{% load rows_columns %}
 
 {% block content %}
-<h2>{{campaign.name}}</h2>
-<br>
-<p>{{campaign.description}}</p>
-<p>Escolha seu estado
-<select id='uf'>
-{% for uf, estado in uf_list %}
-    <option value="{{uf}}">{{estado}}</option>
-{% endfor %}
-</select>
-<a href="#" onclick="filter();">Filtrar</button>
 
-{% endblock %}
+<h1 class="cover-heading">{{ campaign.name }}</h1>
 
-{% block js %}
-<script type="text/javascript">
-function filter(){
-    var ufs = document.getElementById("uf");
-    var uf = ufs.options[ufs.selectedIndex].value;
-    window.location.href = 'politicos/1/'+uf;
-}
-</script>
+<p class="lead">{{ campaign.description }}</p>
+
+<h3>Escolha seu estado</h3>
+
+<table class="table table-bordered table-striped">
+    {% for row in uf_list|columns:3 %}
+        <tr>
+            {% for uf, estado in row %}
+                <td>
+                    <a href="{% url 'politician_list' campaign.pk uf %}">
+                        {{ estado }}
+                    </a>
+                </td>
+            {% endfor %}
+         </tr>
+    {% endfor %}
+</table>
+
 {% endblock %}
