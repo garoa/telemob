@@ -55,12 +55,13 @@ class Politician(models.Model):
     )
 
     CATEGORY_CHOICES = (
-        ('titular', 'Titular'),
-        ('suplente', 'Suplente'),
-        ('efetivo', 'Efetivo')
+        ('T', 'Titular'),
+        ('S', 'Suplente'),
+        ('E', 'Efetivo')
     )
 
     name = models.CharField('Nome', max_length=150)
+    parliamentary_name = models.CharField('Nome Parlamentar', max_length=150)
     political_party = models.CharField('Partido', choices=PARTY_CHOICES, max_length=10)
     uf = models.CharField('UF', choices=STATE_CHOICES, max_length=10)
     category = models.CharField('Categoria', choices=CATEGORY_CHOICES, max_length=20)
@@ -95,8 +96,8 @@ class Contact(models.Model):
         ('error', 'Número inexistente ou outra falha')
     )
 
-    politician = models.OneToOneField(Politician)
-    campaign = models.OneToOneField(Campaign)
+    politician = models.ForeignKey(Politician, verbose_name='Político')
+    campaign = models.ForeignKey(Campaign, verbose_name='Campanha')
     contacted_by = models.CharField(choices=CONTACT_CHOICES, max_length=10)
     result = models.CharField(choices=RESULT_CHOICES, max_length=10)
     date_created = models.DateField('Criado em', auto_now_add=True)
