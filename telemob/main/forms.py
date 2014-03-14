@@ -15,7 +15,7 @@ class ContactForm(forms.ModelForm):
         result = self.cleaned_data.get('result')
         contacted_by = self.cleaned_data.get('contacted_by')
 
-        if contacted_by is not 'tel' and result is not None:
+        if contacted_by != 'tel' and result != None:
             raise forms.ValidationError(
                 'Resultados só podem ser informados se o contato foi por Telefone =/'
             )
