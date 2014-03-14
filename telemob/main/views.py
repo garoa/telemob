@@ -18,8 +18,8 @@ def index(request):
 
     return render_to_response(
         'index.html', {
-        'campaign': campaign,
-        'uf_list': STATE_CHOICES
+            'campaign': campaign,
+            'uf_list': STATE_CHOICES
         }, RequestContext(request))
 
 
@@ -30,13 +30,14 @@ def politician_list(request, campaign_id, uf=None):
     else:
         politician_list = Politician.objects.all()
 
-    politician_list = politician_list.annotate(contacts=Count('contact')).order_by('contacts')
+    politician_list = politician_list.annotate(
+        contacts=Count('contact')).order_by('contacts')
 
     return render_to_response(
         'politician_list.html', {
-        'politician_list': politician_list,
-        'campaign': campaign,
-        'uf_list': STATE_CHOICES
+            'politician_list': politician_list,
+            'campaign': campaign,
+            'uf_list': STATE_CHOICES
         }, RequestContext(request))
 
 
@@ -53,7 +54,7 @@ def report_contact(request, campaign_id, politician_id):
 
     return render_to_response(
         'contact_add.html', {
-        'form': form,
-        'politician': politician,
-        'campaign': campaign
+            'form': form,
+            'politician': politician,
+            'campaign': campaign
         }, RequestContext(request))
