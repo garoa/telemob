@@ -31,7 +31,7 @@ NOMES_CAMPOS = ('nome_parlamentar partido uf categoria '
 
 IGNORAR = set((4, 6, 8, 11, 12, 14, 15, 16))
 
-with open('deputado.tab') as entrada:
+with open('deputados.tab') as entrada:
     leitor = csv.reader(entrada, delimiter='\t')
     for lin in leitor:
         campos = [campo for i, campo in enumerate(lin) if i not in IGNORAR]
