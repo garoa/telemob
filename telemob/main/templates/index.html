@@ -1,13 +1,6 @@
-<html>
+{% extends 'base.html' %}
 
-<script type="text/javascript">
-function filter(){
-    var ufs = document.getElementById("uf");
-    var uf = ufs.options[ufs.selectedIndex].value;
-    window.location.href = 'politicos/1/'+uf;
-}
-</script>
-
+{% block content %}
 <h2>{{campaign.name}}</h2>
 <br>
 <p>{{campaign.description}}</p>
@@ -19,4 +12,14 @@ function filter(){
 </select>
 <a href="#" onclick="filter();">Filtrar</button>
 
-</html>
+{% endblock %}
+
+{% block js %}
+<script type="text/javascript">
+function filter(){
+    var ufs = document.getElementById("uf");
+    var uf = ufs.options[ufs.selectedIndex].value;
+    window.location.href = 'politicos/1/'+uf;
+}
+</script>
+{% endblock %}
