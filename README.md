@@ -61,7 +61,9 @@ Exibe:
 
 * Textos preparados para ajudar a pessoa a comunicar os pontos principais da campanha.
 
-* Caixas de verificação (checkboxes) e botões de rádio (radio buttons) para indicar:
+Ação:
+
+* Usuário aciona caixas de verificação (checkboxes) e botões de rádio (radio buttons) para indicar qual ou quais contatos ele fez ou tentou fazer.
 
 ```
  [ ] Telefonei
@@ -81,6 +83,19 @@ Exibe:
      ( ) Número inexistente ou outra falha   |  1 ponto
  [ ] Enviei e-mail                           |  2 pontos
 ```
+
+
+Tela 4: Apoio à Ligação
+-------------------------------
+
+Sumário dos contatos feitos e links para o usuário contar nas redes sociais que colaborou com a campanha X no Telemob, marcando X "pontos de pressão".
+
+
+
+Como funciona a pontuação
+==========================
+
+A pontuação serve para indicar ao usuário a forma mais eficaz de contato, e também para reordenar os deputados conforme a quantidade e qualidade dos contatos recebidos, colocando os que foram menos contatados no topo da lista da tela 3.
 
 Obs: O telegrama é altamente eficaz: não tem linha ocupada e com certeza algum assessor vai ler. E-mail é fácil de ignorar.
 
