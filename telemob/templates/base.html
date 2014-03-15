@@ -28,43 +28,26 @@
 
   <body>
 
-    <div class="site-wrapper">
-
-      <div class="site-wrapper-inner">
-
-        <div class="cover-container">
-
-          <div class="masthead clearfix">
-            <div class="inner">
-              <h3 class="masthead-brand">Telemob</h3>
-              <ul class="nav masthead-nav">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#">X</a></li>
-                <li><a href="#">X2</a></li>
-              </ul>
-            </div>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+     <div class="navbar-inner">
+       <div class="container">
+          <div class="navbar-header">
+            <a class="brand" href="index.html"> <img src="{% static 'img/telemob-logo-fundo-preto.png' %}" width="300px"></a>
           </div>
-
-          <div class="inner cover">
-            {% block content %}
-            <h1 class="cover-heading">{% block content_title %}{% endblock content_title %}</h1>
-            {% block content_lead %}
-            <p class="lead"></p>
-            {% endblock content_lead %}
-            {% endblock content %}
+          <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+              <li><a href="#about">Sobre</a></li>
+              <li><a href="#contact">Contato</a></li>
+            </ul>
           </div>
+       </div>
+     </div>
+   </div>
 
-          <div class="mastfoot">
-            <div class="inner">
-              <p>Cover template for <a href="http://getbootstrap.com">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
-            </div>
-          </div>
+    <div class="container">
+      {% block content %}{% endblock content %}
 
-        </div>
-
-      </div>
-
-    </div>
+    </div><!-- /.container -->
 
     <script src="http://code.jquery.com/jquery-latest.js"></script>
     <script src="{% static 'js/bootstrap.min.js' %}"></script>
