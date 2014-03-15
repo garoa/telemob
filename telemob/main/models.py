@@ -90,22 +90,30 @@ class Contact(models.Model):
     )
 
     RESULT_CHOICES = (
-        ('Telefone', (
-            ('0', 'Falei com o Exmo. Senhor Deputado'),
-            ('1', 'Falei com outra pessoa'),
-            ('2', 'Deixei um recado'),
-            ('3', 'Número ocupado'),
-            ('4', 'Ninguém atendeu.'),
-            ('5', 'Número inexistente ou outra falha')
+        ('Telefonei', (
+                ('0', 'Falei com o(a) Deputado(a) em pessoa'),
+                ('1', 'Falei com outra pessoa'),
+                ('2', 'Deixei recado em uma máquina'),
+                ('3', 'Número ocupado'),
+                ('4', 'Ninguém atendeu.'),
+                ('5', 'Número inexistente ou outra falha')
             )
         ),
-        ('Fax', (
-            ('6', 'Transmissão bem sucedida'),
-            ('7', 'Número ocupado'),
-            ('8', 'Ninguém atendeu.'),
-            ('9', 'Número inexistente ou outra falha')
+        ('Enviei telegrama', (
+                ('6', 'Correio vai entregar no gabinete!'),
             )
-        )
+        ),
+        ('Enviei fax', (
+                ('7', 'Transmissão bem sucedida'),
+                ('8', 'Número ocupado'),
+                ('9', 'Ninguém atendeu.'),
+                ('10', 'Número inexistente ou outra falha')
+            )
+        ),
+        ('Enviei e-mail', (
+                ('11', 'Tomara que alguém leia...'),
+            )
+        ),
     )
 
     politician = models.ForeignKey(Politician, verbose_name='Político')

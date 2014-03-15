@@ -2,25 +2,26 @@
 {% load rows_columns %}
 
 {% block content %}
+<div class="starter-template">
+    <h1>{{ campaign.name }}</h1>
 
-<h1 class="cover-heading">{{ campaign.name }}</h1>
+    <p class="lead">{{ campaign.description }}</p>
 
-<p class="lead">{{ campaign.description }}</p>
+    <h3>Escolha seu estado</h3>
 
-<h3>Escolha seu estado</h3>
-
-<table class="table table-bordered table-striped">
-    {% for row in uf_list|columns:4 %}
-        <tr>
-            {% for uf, estado in row %}
-                <td>
-                    <a href="{% url 'politician_list' campaign.pk uf %}">
-                        {{ estado }}
-                    </a>
-                </td>
-            {% endfor %}
-         </tr>
-    {% endfor %}
-</table>
+    <table class="table table-bordered table-striped">
+        {% for row in uf_list|columns:4 %}
+            <tr>
+                {% for uf, estado in row %}
+                    <td>
+                        <a href="{% url 'politician_list' campaign.pk uf %}">
+                            {{ estado }}
+                        </a>
+                    </td>
+                {% endfor %}
+             </tr>
+        {% endfor %}
+    </table>
+</div>
 
 {% endblock %}
