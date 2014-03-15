@@ -63,23 +63,24 @@ Exibe:
 
 * Caixas de verificação (checkboxes) e botões de rádio (radio buttons) para indicar:
 
+```
  [ ] Telefonei
      ...e o resultado foi:
-     (x) Falei com o Exmo. Senhor Deputado
-     ( ) Falei outra pessoa
-     ( ) Deixei recado em uma máquina
-     ( ) Número ocupado
-     ( ) Ninguém atendeu
-     ( ) Número inexistente ou outra falha
+     (x) Falei com a/o Deputada/o em pessoa  | 13 pontos
+     ( ) Falei outra pessoa                  |  5 pontos
+     ( ) Deixei recado em uma máquina        |  3 pontos
+     ( ) Número ocupado                      |  1 ponto
+     ( ) Ninguém atendeu                     |  1 ponto
+     ( ) Número inexistente ou outra falha   |  1 ponto
+ [ ] Mandei telegrama                        |  8 pontos
  [ ] Enviei fax
      ...e o resultado foi:
-     (x) Transmissão bem sucedida
-     ( ) Número ocupado
-     ( ) Ninguém atendeu
-     ( ) Número inexistente ou outra falha
- [ ] Mandei telegrama
- [ ] Enviei e-mail
-
+     (x) Transmissão bem sucedida            |  5 pontos
+     ( ) Número ocupado                      |  1 ponto
+     ( ) Ninguém atendeu                     |  1 ponto
+     ( ) Número inexistente ou outra falha   |  1 ponto
+ [ ] Enviei e-mail                           |  2 pontos
+```
 
 Obs: O telegrama é altamente eficaz: não tem linha ocupada e com certeza algum assessor vai ler. E-mail é fácil de ignorar.
 
