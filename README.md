@@ -3,16 +3,16 @@ telemob
 
 Telemob: ferramenta para ajudar a sociedade civil a pressionar seus deputados e senadores no Congresso Nacional
 
-Idéia: https://garoa.net.br/wiki/Telemob
-
-Grupo de discussão: https://groups.google.com/forum/#!forum/telemob
-
 Sua motivação inicial é facilitar a pressão popular pela aprovação do Marco Civil da Internet, otimizando e distribuindo a pressão entre todos os congressistas.
 
-'''ATENÇÃO: para contribuir neste projeto, inscreva-se no [https://groups.google.com/forum/#!forum/telemob Google Group: Telemob]'''
+Idéia: https://garoa.net.br/wiki/Telemob
+
+Grupo de discussão para desenvolvedores: https://groups.google.com/forum/#!forum/telemob
 
 
-== Exemplo de uso: campanha pela aprovação do Marco Civil da Internet ==
+
+Exemplo de uso: campanha pela aprovação do Marco Civil da Internet
+==================================================================
 
 Não adianta todo mundo ligar só para os líderes, ou para os deputados mais famosos ou para o Eduardo Cunha (PMDB-RJ) -- que é totalmente contra o Marco Civil.
 
@@ -21,9 +21,11 @@ Não adianta todo mundo ligar só para os líderes, ou para os deputados mais fa
 O '''Telemob''' direciona as pessoas para ligarem para os congressistas de seus estados, e ligarem primeiro para aqueles que ainda receberam menos ligações.
 
 
-== Descrição ==
+Descrição
+===========
 
-=== Tela 1: Entrada ===
+Tela 1: Entrada
+-----------------
 
 Exibe:
 
@@ -37,7 +39,8 @@ Ação:
 
 * O usuário clica em uma unidade da federação e vai para a lista de deputados (futuramente poderá ser a lista de senadores, conforme configurado na campanha ativa)
 
-=== Tela 2: Lista de Congressistas ===
+Tela 2: Lista de Congressistas
+-------------------------------
 
 Exibe:
 
@@ -49,7 +52,8 @@ Ação:
 
 * O usuário clica em um deputado e vai para a Tela de Ligação
 
-=== Tela: Apoio à Ligação ===
+Tela 3: Apoio à Ligação
+-------------------------------
 
 Exibe:
 
