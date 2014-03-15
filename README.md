@@ -1,7 +1,7 @@
-telemob
-=======
+Telemob
+========
 
-Telemob: ferramenta para ajudar a sociedade civil a pressionar seus deputados e senadores no Congresso Nacional
+**Telemob** é uma ferramenta para ajudar a sociedade civil a pressionar seus deputados e senadores no Congresso Nacional
 
 Sua motivação inicial é facilitar a pressão popular pela aprovação do Marco Civil da Internet, otimizando e distribuindo a pressão entre todos os congressistas.
 
@@ -11,14 +11,14 @@ Grupo de discussão para desenvolvedores: https://groups.google.com/forum/#!foru
 
 
 
-Exemplo de uso: campanha pela aprovação do Marco Civil da Internet
-==================================================================
+Exemplo de uso
+================
 
-Não adianta todo mundo ligar só para os líderes, ou para os deputados mais famosos ou para o Eduardo Cunha (PMDB-RJ) -- que é totalmente contra o Marco Civil.
+Estamos em campanha pela aprovação do Marco Civil da Internet sem emendas. Porém, não adianta todo mundo ligar só para os líderes, ou para os deputados mais famosos ou para o Eduardo Cunha (PMDB-RJ) -- que é totalmente contra o Marco Civil.
 
 É preciso ligar para todos os congressistas, de todos os partidos e estados. Se cada congressista receber muitas ligações, a chance de votarem direito aumenta muito.
 
-O '''Telemob''' direciona as pessoas para ligarem para os congressistas de seus estados, e ligarem primeiro para aqueles que ainda receberam menos ligações.
+O **Telemob** direciona as pessoas para ligarem para os congressistas de seus estados, e ligarem primeiro para aqueles que ainda receberam menos ligações.
 
 
 Descrição
@@ -29,7 +29,7 @@ Tela 1: Entrada
 
 Exibe:
 
-* '''título''' e '''resumo''' da campanha atual (futuramente poderá haver mais de uma campanha)
+* Título e resumo da campanha atual (futuramente poderá haver mais de uma campanha)
 
 * Instrução: "Escolha o estado onde você vota (seu domicílio eleitoral)"
 
@@ -46,13 +46,13 @@ Exibe:
 
 * Lista de congressistas da UF selecionada, ordenada por prioridade de chamada. A prioridade é definida pelo inverso do número de cliques que o deputado já recebeu. Assim no topo da lista aparecem aqueles que sofreram menos pressão até o momento.
 
-* Instrução: "Escolha o deputado para você ligar. Dê preferência ao primeiro da lista."
+* Instrução: "Escolha o deputado para você pressionar por fone, telegrama, fax e/ou e-mail. Dê preferência ao primeiro da lista."
 
 Ação:
 
-* O usuário clica em um deputado e vai para a Tela de Ligação
+* O usuário clica em um deputado e vai para a Tela de Contato
 
-Tela 3: Apoio à Ligação
+Tela 3: Apoio ao Contato
 -------------------------------
 
 Exibe:
