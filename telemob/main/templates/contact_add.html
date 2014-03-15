@@ -3,14 +3,19 @@
 <p>Telefone: {{ politician.tel }}</p>
 <p>Fax: {{ politician.fax }}</p>
 <p>E-mail: {{ politician.email }}</p>
-<p>Informe como entrou en contato com o político e qual a resposta!</p>
+
+<h3>Agora é com você!</h3>
+
+Escolha uma das formas de contato.
+
+<p>Informe como entrou em contato com o parlamentar e o que aconteceu:</p>
 <form action="" method="post">
     {% csrf_token %}
     <br/>
     {{form.as_p}}
     <div>
-        <a href="/contacts/contact/">Cancelar</a>
-        <button type="submit">Adicionar</button>
+        <a href="{url }">Não fiz o contato agora</a>
+        <button type="submit">Confirmar contato realizado</button>
     </div>
 </form>
 </html>

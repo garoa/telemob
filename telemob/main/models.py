@@ -111,7 +111,7 @@ class Contact(models.Model):
             )
         ),
         ('Enviei e-mail', (
-                ('11', 'Tomara que alguém leia...'),
+                ('11', 'Tomara que alguém leia!'),
             )
         ),
     )
