@@ -6,7 +6,30 @@
 
 <h3>Agora é com você!</h3>
 
-Escolha uma das formas de contato.
+<p>Escolha uma ou mais formas de contato:</p>
+
+<table border="1">
+<tr>
+	<th>Forma de contato</th>
+	<th>Como funciona</th>
+</tr>
+<tr>
+	<th>Telefone</th>
+	<td>Falar educadamente com o(a) deputado(a) em pessoa é o ideal. Falar com um assessor já vale algo. Sempre vale tentar.</td>
+</tr>
+<tr>
+	<th>Telegrama</th>
+	<td>Não dá ocupado, e provavelmente alguém vai ler. Custa R$ 4,98 e pode ser enviado pelo site do Correio <a href="http://shopping.correios.com.br/wbm/store/script/wbm2400901p01.aspx?cd_company=ErZW8Dm9i54=&cd_product=IFYzQdTZeXo=">(link direto oficial)</a></td>
+</tr>
+<tr>
+	<th>Fax</th>
+	<td>Se você puder enviar um fax, é mais eficaz que mandar e-mail, mas não tão forte quanto mandar um <a href="http://shopping.correios.com.br/wbm/store/script/wbm2400901p01.aspx?cd_company=ErZW8Dm9i54=&cd_product=IFYzQdTZeXo=">telegrama</a>.</td>
+</tr>
+<tr>
+	<th>E-mail</th>
+	<td>O mais fácil de enviar e o mais fácil de ser totalmente ignorado. Mande e-mail mas também telefone ou envie fax ou <a href="http://shopping.correios.com.br/wbm/store/script/wbm2400901p01.aspx?cd_company=ErZW8Dm9i54=&cd_product=IFYzQdTZeXo=">telegrama</a> para fazer mais pressão.</td>
+</tr>
+</table>
 
 <p>Informe como entrou em contato com o parlamentar e o que aconteceu:</p>
 <form action="" method="post">
@@ -14,7 +37,7 @@ Escolha uma das formas de contato.
     <br/>
     {{form.as_p}}
     <div>
-        <a href="{url }">Não fiz o contato agora</a>
+        <a href="{% url 'politician_list' campaign_id=campaign.pk uf=politician.uf %}">Não fiz o contato agora</a>
         <button type="submit">Confirmar contato realizado</button>
     </div>
 </form>

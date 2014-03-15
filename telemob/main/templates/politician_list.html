@@ -1,23 +1,22 @@
 <html>
-<p>Lista de políticos do seu estado.</p>
+<p>Escolha o deputado para você pressionar por fone, telegrama,
+    fax e/ou e-mail.</p>
+
+<p><b>Para melhor distribuir a pressão, dê preferência ao primeiro da lista.</b></p>
 <table border='1'>
     <thead>
         <tr>
-            <th>Nome Parlamentar</th>
-            <th>Nome</th>
+            <th>Contatos reais<br> + tentativas</th>
+            <th>Nome ou apelido</th>
             <th>Partido</th>
-            <th>Contatos recebidos</th>
-            <th>Estado</th>
         </tr>
     </thead>
     <tbody>
     {% for politician in politician_list %}
         <tr>
-            <td><a href="{% url 'report_contact' campaign.id politician.id %}">{{ politician.parliamentary_name|truncatechars:30 }}</a></td>
-            <td>{{ politician.name|truncatechars:30 }}</td>
+            <td align="right">{{ politician.contacts }}</td>
+            <td><a href="{% url 'report_contact' campaign.id politician.id %}">{{ politician.parliamentary_name }}</a></td>
             <td>{{ politician.political_party }}</td>
-            <td>{{ politician.contacts }}</td>
-            <td>{{ politician.uf }}</td>
         </tr>
     {% endfor %}
     </tbody>
