@@ -1,7 +1,11 @@
 <html>
+<h2>{{ politician.name }}</h2>
+<p>Telefone: {{ politician.tel }}</p>
+<p>Fax: {{ politician.fax }}</p>
+<p>E-mail: {{ politician.email }}</p>
+<p>Informe como entrou en contato com o político e qual a resposta!</p>
 <form action="" method="post">
     {% csrf_token %}
-    <p>Informe como entrou en contato com o político e qual a resposta!</p>
     <br/>
     {{form.as_p}}
     <div>
