@@ -118,8 +118,8 @@ class Contact(models.Model):
 
     politician = models.ForeignKey(Politician, verbose_name='Político')
     campaign = models.ForeignKey(Campaign, verbose_name='Campanha')
-    contacted_by = models.CharField(choices=CONTACT_CHOICES, max_length=10)
-    result = models.CharField(choices=RESULT_CHOICES, max_length=10, blank=True, null=True)
+    contacted_by = models.CharField(verbose_name='Contato via', choices=CONTACT_CHOICES, max_length=10)
+    result = models.CharField(verbose_name='Resultado do contato', choices=RESULT_CHOICES, max_length=10, blank=True, null=True)
     date_created = models.DateField('Criado em', auto_now_add=True)
 
     class Meta:
@@ -129,7 +129,7 @@ class Contact(models.Model):
         return '%s - %s' % (self.campaign.name, self.politician.name)
 
 class HelpText(models.Model):
-    campaign = models.ForeignKey(Campaign, verbose_name="Texto de ajuda para a campanha")
+    campaign = models.ForeignKey(Campaign, verbose_name='Texto de ajuda para a campanha')
     name = models.CharField('Nome da Ajuda', max_length=150)
     description = models.TextField('Texto de Ajuda')
     date_created = models.DateField('Criado em', auto_now_add=True)
