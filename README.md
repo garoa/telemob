@@ -1,22 +1,27 @@
-Para rodar em ambiente de desenvolvimento:
+#Como Contribuir
 
 ```
-./manage.py runserver --settings=telemob.settings.local
+git clone https://github.com/garoa/telemob.git
+cd telemob
+mv .rename-to-dotenv .env
+python manage.py syncdb --migrate
+python manage.py runserver
 ```
 
-Veja mais em: https://docs.djangoproject.com/en/dev/topics/settings/#envvar-DJANGO_SETTINGS_MODULE
-
-Uma dica para quem usa virtualenvwrapper é colocar no postactivate o seguinte:
+#Para instalar no Heroku
 
 ```
-export DJANGO_SETTINGS_MODULE=telemob.settings.local
+heroku create telemob
+heroku labs:enable user-env-compile
+heroku config:set 'SECRET_KEY=VALOR-RANDOMICO-QUE-O-STARTPROJECT-GERA-PRA-VC'
+heroku config:set DEBUG=False
+git push heroku master
+heroku run python manage.py syncdb --migrate
 ```
 
-Assim quando você ativar o virtual env essa variável de ambiente é setada
-não precisando passar o parâmetro --settings para rodar os comandos do manage.py
-
-Coloque também no postdeactivate a seguinte linha:
+#Para fazer deploy no Heroku
 
 ```
-unset DJANGO_SETTINGS_MODULE
+git push heroku master
+heroku run python manage.py syncdb --migrate
 ```
