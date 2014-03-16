@@ -1,4 +1,4 @@
-  body {
+body {
   padding-top: 50px;
 }
 .starter-template {
@@ -7,4 +7,8 @@
 
 .navbar-inverse{
   background-color: #000;
+}
+
+.messages {
+  background-color: #afa;
 }

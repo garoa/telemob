@@ -84,41 +84,42 @@ class Contact(models.Model):
 
     CONTACT_CHOICES = (
         ('tel', 'Telefone'),
+        ('telegram', 'Telegrama via Web'),
         ('fax', 'Fax'),
-        ('telegrama', 'Telegrama'),
         ('email', 'E-mail')
     )
 
     RESULT_CHOICES = (
         ('Telefonei', (
-                ('0', 'Falei com o(a) Deputado(a) em pessoa'),
-                ('1', 'Falei com outra pessoa'),
-                ('2', 'Deixei recado em uma máquina'),
-                ('3', 'Número ocupado'),
-                ('4', 'Ninguém atendeu.'),
-                ('5', 'Número inexistente ou outra falha')
+                ('10', 'Falei com o(a) Deputado(a) em pessoa.'),
+                ('11', 'Falei com outra pessoa.'),
+                ('12', 'Deixei recado em uma máquina.'),
+                ('13', 'Fone: número ocupado'),
+                ('14', 'Fone: ninguém atendeu.'),
+                ('15', 'Fone: número inexistente ou outra falha')
             )
         ),
         ('Enviei telegrama', (
-                ('6', 'Correio vai entregar no gabinete!'),
+                ('20', 'Nada a reportar: correio vai entregar no gabinete!'),
             )
         ),
         ('Enviei fax', (
-                ('7', 'Transmissão bem sucedida'),
-                ('8', 'Número ocupado'),
-                ('9', 'Ninguém atendeu.'),
-                ('10', 'Número inexistente ou outra falha')
+                ('30', 'Fax: transmissão bem sucedida'),
+                ('31', 'Fax: número ocupado'),
+                ('32', 'Fax: não atendeu.'),
+                ('33', 'Fax: número inexistente ou outra falha')
             )
         ),
         ('Enviei e-mail', (
-                ('11', 'Tomara que alguém leia!'),
+                ('40', 'E-mail enviado e não voltou.'),
+                ('41', 'E-mail voltou com erro'),
             )
         ),
     )
 
     politician = models.ForeignKey(Politician, verbose_name='Político')
     campaign = models.ForeignKey(Campaign, verbose_name='Campanha')
-    contacted_by = models.CharField(verbose_name='Contato via', choices=CONTACT_CHOICES, max_length=10, blank=True, null=True)
+    contacted_by = models.CharField(verbose_name='Contato via', choices=CONTACT_CHOICES, max_length=10)
     result = models.CharField(verbose_name='Resultado do contato', choices=RESULT_CHOICES, max_length=10, blank=True, null=True)
     date_created = models.DateField('Criado em', auto_now_add=True)
 
