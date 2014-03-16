@@ -1,0 +1,1 @@
+web: gunicorn telemob.wsgi
