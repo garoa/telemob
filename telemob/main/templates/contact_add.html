@@ -2,11 +2,18 @@
 {% load staticfiles %}
 {% block content %}
 <div class="starter-template">
-    <h3>Parlamentar a contatar:</h3>
-    <h3>{{ politician.name }}</h3>
-    <p>Telefone: {{ politician.tel }}</p>
-    <p>Fax: {{ politician.fax }}</p>
-    <p>E-mail: {{ politician.email }}</p>
+    <h3>Contatar: {{ politician.name }}</h3>
+
+<!--FIXME: dados fixos sobre deputados, generalizar para senadores -->
+    <table class="table table-bordered">
+        <tr><th>Fone</th><td>0-xx-61-{{ politician.tel }}</td>
+        <tr><th>Fax</th><td>0-xx-61-{{ politician.fax }}</td>
+        <tr><th>E-mail</th><td>{{ politician.email }}</td>
+        <tr><th>Endereço</th><td>Deputado(a) {{ politician.name }}<br>Câmara dos Deputados<br>
+                            Edifício Anexo {{ politician.annex }}, gabinete {{ politician.chamber }}<br>
+                            Brasília - DF - CEP 70160-900
+                        </td>
+    </table>
 
     <h3>Agora é com você!</h3>
 
@@ -14,8 +21,8 @@
 
     <table class="table table-bordered table-striped">
     <tr>
-        <th>Forma de contato</th>
-        <th>Como funciona</th>
+        <th></th>
+        <th>Dicas</th>
     </tr>
     <tr>
         <th>Telefone</th>
@@ -23,20 +30,27 @@
     </tr>
     <tr>
         <th>Telegrama</th>
-        <td>Não dá ocupado e alguém vai ler, provavelmente. Custa R$ 4,98 e pode ser enviado online pelo site do Correio <a href="http://shopping.correios.com.br/wbm/store/script/wbm2400901p01.aspx?cd_company=ErZW8Dm9i54=&cd_product=IFYzQdTZeXo=">(link direto oficial)</a></td>
+        <td>Não dá ocupado e alguém provavelmente vai ler. Custa R$ 4,98 e pode ser enviado online pelo site do Correio <a target="_blank" href="http://shopping.correios.com.br/wbm/store/script/wbm2400901p01.aspx?cd_company=ErZW8Dm9i54=&cd_product=IFYzQdTZeXo=">(link direto oficial)</a></td>
     </tr>
     <tr>
         <th>Fax</th>
-        <td>Se você puder enviar um fax, é mais eficaz que mandar e-mail, mas não tão forte quanto mandar um <a href="http://shopping.correios.com.br/wbm/store/script/wbm2400901p01.aspx?cd_company=ErZW8Dm9i54=&cd_product=IFYzQdTZeXo=">telegrama</a>.</td>
+        <td>Se você puder enviar um fax, é mais eficaz que mandar e-mail, mas não tão forte quanto mandar um <a target="_blank"  href="http://shopping.correios.com.br/wbm/store/script/wbm2400901p01.aspx?cd_company=ErZW8Dm9i54=&cd_product=IFYzQdTZeXo=">telegrama</a>.</td>
     </tr>
     <tr>
         <th>E-mail</th>
-        <td>O meio mais fácil de ser totalmente ignorado. Mande e-mail personalizado mas também telefone ou envie fax ou <a href="http://shopping.correios.com.br/wbm/store/script/wbm2400901p01.aspx?cd_company=ErZW8Dm9i54=&cd_product=IFYzQdTZeXo=">telegrama</a> para fazer mais pressão.</td>
+        <td>O meio mais fácil de ser totalmente ignorado. Mande e-mail personalizado mas também telefone ou envie fax ou <a  target="_blank" href="http://shopping.correios.com.br/wbm/store/script/wbm2400901p01.aspx?cd_company=ErZW8Dm9i54=&cd_product=IFYzQdTZeXo=">telegrama</a> para fazer mais pressão.</td>
     </tr>
     </table>
 
     <h4>Coisas a dizer</h4>
 
+<!--FIXME: isso tem que vir do registro da campanha! -->
+<ul>
+<li>Não queremos que a Web vire uma TV a cabo, onde só os ricos terão acesso ao que há de melhor e mais novo.</li>
+<li>O Marco Civil deve ser aprovado com a garantia da neutralidade de rede.</li>
+<li>Queremos uma lei que garanta nossa privacidade e que não permita o fatiamento da internet.</li>
+<li>Pedimos que defenda os interesses dos cidadãos e não apenas das empresas de telecomunicações.</li>
+</ul>
 
     <h4>Informe o resultado do contato</h4>
 
