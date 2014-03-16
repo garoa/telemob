@@ -2,7 +2,7 @@
 
 from django.conf.urls import patterns, url
 
-urlpatterns = patterns('main',
+urlpatterns = patterns('telemob.main',
 
 	url(r'^$', 'views.index', name='index'),
 	url(r'^politicos/(?P<campaign_id>\d+)/$', 'views.politician_list', name='state_list'),
