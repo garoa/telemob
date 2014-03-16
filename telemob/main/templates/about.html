@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% load rows_columns %}
+
+{% block content %}
+<div class="starter-template">
+    <h1>Sobre o Telemob</h1>
+
+    <p class="lead">O Telemob foi criado para ajudar o cidadão a pressionar os deputados federais e senadores do seu estado a votarem conforme a vontade de seus eleitores, resistindo a lobbies contrários aos interesses da sociedade.</p>
+
+
+<h3>Como funciona</h3>
+
+<p>O Telemob oferece 3 coisas:</p>
+
+<dl>
+    <dt>Priorização dos parlamentares a serem contatados</dt>
+    <dd>No passo 2, o primeiro parlamenar da lista é sempre o que recebeu menos contatos até o momento, em cada estado. O objetivo é distribuir a pressão popular entre todos os representantes, evitando que somente os parlamentares mais famosos sejam pressionados. Os parlamentares são ordenados de acordo com o número de contatos reportados através deste site, em ordem crescente.<p></p>
+    </dd>
+    <dt>Dados de contato dos parlamentares</dt>
+    <dd>O Telemob informa os dados de contato dos parlamentares: fone do gabinete, fax, e-mail e endereço postal para envio de telegrama. E também o link para a página de envio de telegrama do site dos Correios.<p></p>
+    </dd>
+    <dt>Registro do resultado do contato</dt>
+    <dd>O Telemob não envia nenhuma mensagem, e não acreditamos no uso de ferramentas de spam como forma de pressão. O cidadão deve escolher uma forma de contato, enviar a mensagem ele mesmo, e depois voltar à página e indicar de que forma mandou a mensagem e se teve sucesso.<p></p>
+    </dd>
+</dl>
+
+<h3>Privacidade</h3>
+<p>Nenhuma informação pessoal dos usuários é armazenada no sistema. Os registros de contatos realizados são anônimos.</p>
+
+<h3>Créditos</h3>
+<p>O sistema Telemob foi desenvolvido por um <a href="https://github.com/garoa/telemob/blob/master/CONTRIBUTORS.txt">pequeno grupo de voluntários</a> entre 14 e 16 de março de 2014.</p>
+
+<p>Este projeto é software livre (GPL v.3), e foi desenvolvido em Python com Django. O código está no Github: <a href="https://github.com/garoa/telemob/blob/master/CONTRIBUTORS.txt">https://github.com/garoa/telemob</a>. Faça bom uso dele!</p>
+
+<h3>Contato</h3>
+Para sugerir melhorias ou reportar falhas, cadastre uma <a href="https://github.com/garoa/telemob/issues">pendência no repositório do projeto</a> ou escreva para <a href="mailto:telemob@turing.com.br">telemob@turing.com.br</a>.
+
+</div>
+
+{% endblock %}

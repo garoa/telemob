@@ -8,3 +8,7 @@ body {
 .navbar-inverse{
   background-color: #000;
 }
+
+.messages {
+  background-color: #afa;
+}
