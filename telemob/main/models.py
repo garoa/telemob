@@ -118,7 +118,7 @@ class Contact(models.Model):
 
     politician = models.ForeignKey(Politician, verbose_name='Político')
     campaign = models.ForeignKey(Campaign, verbose_name='Campanha')
-    contacted_by = models.CharField(verbose_name='Contato via', choices=CONTACT_CHOICES, max_length=10)
+    contacted_by = models.CharField(verbose_name='Contato via', choices=CONTACT_CHOICES, max_length=10, blank=True, null=True)
     result = models.CharField(verbose_name='Resultado do contato', choices=RESULT_CHOICES, max_length=10, blank=True, null=True)
     date_created = models.DateField('Criado em', auto_now_add=True)
 
