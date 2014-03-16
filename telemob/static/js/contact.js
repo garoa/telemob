@@ -1,5 +1,5 @@
 (function() {
-  contact = {
+  var contact = {
     init: function(){
       contact.check_selected();
       $(document).on('change', 'select', function(){
