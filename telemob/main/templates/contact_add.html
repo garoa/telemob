@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% load staticfiles %}
 
 {% block content %}
 <div class="starter-template">
@@ -45,19 +46,26 @@
     <p><b>Atenção:</b>Reporte apenas contatos efetivados ou tentativas de ligação que realmente fez.</p>
 
 
-    <form action="" method="post">
+    <form action="" method="post" class='' role='form'>
         {% csrf_token %}
-        <br/>
-        {{form.as_p}}
-        <div>
-            <p>
-                <button type="submit">Confirmar contato realizado</button>
-            </p>
-            <p>
-               <a href="{% url 'politician_list' campaign_id=campaign.pk uf=politician.uf %}"
-                 >Não fiz o contato agora</a>
-            </p>
+        {% for f in form %}
+        <div class='form-group'>
+          <label for='id_{{ f.name }}' class='col-sm-2 control-label'>
+            {{ f.label }}:
+          </label>
+          <div class='controls'>
+             {{ f }}
+           </div>
+         </div>
+        {% endfor %}
+
+        <div class='form-group'>
+          <a href="{% url 'politician_list' campaign_id=campaign.pk uf=politician.uf %}" class='btn btn-danger'>Não fiz o contato agora</a>
+          <button type="submit" class='btn btn-primary send-button'>Confirmar contato realizado</button>
         </div>
     </form>
 </div>
 {% endblock %}
+{% block js %}
+<script src="{% static 'js/contact.js' %}"></script>
+{% endblock js %}
