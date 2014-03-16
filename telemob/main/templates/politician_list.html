@@ -1,24 +1,28 @@
-<html>
-<p>Escolha o deputado para você pressionar por fone, telegrama,
-    fax e/ou e-mail.</p>
+{% extends 'base.html' %}
 
-<p><b>Para melhor distribuir a pressão, dê preferência ao primeiro da lista.</b></p>
-<table border='1'>
-    <thead>
-        <tr>
-            <th>Contatos reais<br> + tentativas</th>
-            <th>Nome ou apelido</th>
-            <th>Partido</th>
-        </tr>
-    </thead>
-    <tbody>
-    {% for politician in politician_list %}
-        <tr>
-            <td align="right">{{ politician.contacts }}</td>
-            <td><a href="{% url 'report_contact' campaign.id politician.id %}">{{ politician.parliamentary_name }}</a></td>
-            <td>{{ politician.political_party }}</td>
-        </tr>
-    {% endfor %}
-    </tbody>
-</table>
-</html>
+{% block content %}
+<div class="starter-template">
+    <p>Escolha o deputado para você pressionar por fone, telegrama,
+        fax e/ou e-mail.</p>
+
+    <p><b>Para melhor distribuir a pressão, dê preferência ao primeiro da lista.</b></p>
+    <table class="table table-bordered table-striped">
+        <thead>
+            <tr>
+                <th>Contatos reais<br> + tentativas</th>
+                <th>Nome ou apelido</th>
+                <th>Partido</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for politician in politician_list %}
+            <tr>
+                <td align="right">{{ politician.contacts }}</td>
+                <td><a href="{% url 'report_contact' campaign.id politician.id %}">{{ politician.parliamentary_name }}</a></td>
+                <td>{{ politician.political_party }}</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}
