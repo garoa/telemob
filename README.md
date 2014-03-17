@@ -1,5 +1,7 @@
 #Como Contribuir
 
+**Ao fazer um pull-request, assegure-se de que os mantenedores do projeto sabem o seu nome e o seu e-mail. Se não tivermos essas informações, não aceitaremos seu pull-request, por melhor que seja.**
+
 ```
 git clone https://github.com/garoa/telemob.git
 cd telemob
