@@ -2,11 +2,22 @@
 
 **Ao fazer um pull-request, assegure-se de que os mantenedores do projeto sabem o seu nome e o seu e-mail. Se não tivermos essas informações, não aceitaremos seu pull-request, por melhor que seja.**
 
+##Clonar código e instalar dependências
 ```
 git clone https://github.com/garoa/telemob.git
 cd telemob
-mv .rename-to-dotenv .env
+pip install -r requirements
 python manage.py syncdb --migrate
+```
+
+##Configurar ambiente
+```
+mv .rename-to-dotenv .env
+```
+Coloque no arquivo .env as credenciais do reCaptcha (http://www.google.com/recaptcha)
+
+##Rodando o projeto
+```
 python manage.py runserver
 ```
 
