@@ -96,7 +96,7 @@ class Contact(models.Model):
                 ('12', 'Deixei recado em uma máquina.'),
                 ('13', 'Fone: número ocupado'),
                 ('14', 'Fone: ninguém atendeu.'),
-                ('15', 'Fone: número inexistente ou outra falha')
+                ('15', 'Fone: número inexistente ou outra falha.')
             )
         ),
         ('Enviei telegrama', (
@@ -104,15 +104,15 @@ class Contact(models.Model):
             )
         ),
         ('Enviei fax', (
-                ('30', 'Fax: transmissão bem sucedida'),
-                ('31', 'Fax: número ocupado'),
+                ('30', 'Fax: transmissão bem sucedida.'),
+                ('31', 'Fax: número ocupado.'),
                 ('32', 'Fax: não atendeu.'),
-                ('33', 'Fax: número inexistente ou outra falha')
+                ('33', 'Fax: número inexistente ou outra falha.')
             )
         ),
         ('Enviei e-mail', (
-                ('40', 'E-mail enviado e não voltou.'),
-                ('41', 'E-mail voltou com erro'),
+                ('40', 'E-mail enviado e não voltou, tomara que leiam.'),
+                ('41', 'E-mail voltou com erro.'),
             )
         ),
     )
