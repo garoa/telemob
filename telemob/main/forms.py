@@ -38,17 +38,17 @@ class ContactForm(forms.ModelForm):
         #FIXME: os ranges e números abaixo dependem de RESULT_CHOICES em models.py
         if contacted_by == 'tel' and result not in range(10, 16):
             raise forms.ValidationError(
-                'Este resultado só faz sentido se o contato foi por telefone.'
+                'Este resultado não faz sentido se o contato foi por telefone.'
             )
 
         if contacted_by == 'fax' and result not in range(30, 34):
             raise forms.ValidationError(
-                'Este resultado só faz sentido se o contato foi por fax.'
+                'Este resultado não faz sentido se o contato foi por fax.'
             )
 
         if contacted_by == 'email' and result not in range(40, 42):
             raise forms.ValidationError(
-                'Este resultado só faz sentido se o contato foi por email.'
+                'Este resultado não faz sentido se o contato foi por email.'
             )
 
         return result
