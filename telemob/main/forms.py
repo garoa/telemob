@@ -1,11 +1,16 @@
 # -*- coding: utf-8 -*-
 
 from django import forms
+from captcha.fields import ReCaptchaField
 
 from .models import Contact
 
-
 class ContactForm(forms.ModelForm):
+
+    # FIXME: Aguardando django-recaptcha aceitar o PR com tradução pt-br
+    captcha = ReCaptchaField(error_messages={
+        'captcha_invalid': 'Incorreto, tente novamente'
+    })
 
     class Meta:
         model = Contact

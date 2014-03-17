@@ -39,6 +39,7 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'south',
+    'captcha',
     'telemob.main',
 )
 
@@ -107,6 +108,17 @@ TEMPLATE_DIRS = (
 SESSION_EXPIRE_AT_BROWSER_CLOSE = True
 
 SOUTH_TESTS_MIGRATE = False
+
+# reCaptcha credentials
+RECAPTCHA_PUBLIC_KEY = config(
+    'RECAPTCHA_PUBLIC_KEY',
+    default='1234567897132123'
+)
+
+RECAPTCHA_PRIVATE_KEY = config(
+    'RECAPTCHA_PRIVATE_KEY',
+    default='1234567897132123'
+)
 
 if DEBUG:
     EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
