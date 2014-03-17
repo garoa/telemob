@@ -48,7 +48,13 @@
 
     <form action="" method="post" role="form">
         {% csrf_token %}
+        
         {% for f in form %}
+        {% if f.errors %}
+        <div class="text-danger">
+          {{ f.errors }}
+        </div>
+        {% endif %}
         <div class="form-group">
           <label for="id_{{ f.name }}" class="col-sm-2 control-label">
             {{ f.label }}:
