@@ -46,22 +46,22 @@
     <p><b>Atenção:</b> Reporte apenas contatos efetivados ou tentativas de ligação que você realmente fez.</p>
 
 
-    <form action="" method="post" role='form'>
+    <form action="" method="post" role="form">
         {% csrf_token %}
         {% for f in form %}
-        <div class='form-group'>
-          <label for='id_{{ f.name }}' class='col-sm-2 control-label'>
+        <div class="form-group">
+          <label for="id_{{ f.name }}" class="col-sm-2 control-label">
             {{ f.label }}:
           </label>
-          <div class='controls'>
+          <div class="controls">
              {{ f }}
            </div>
          </div>
         {% endfor %}
 
-        <div class='form-group'>
-          <a href="{% url 'politician_list' campaign_id=campaign.pk uf=politician.uf %}" class='btn btn-danger'>Não fiz o contato agora</a>
-          <button type="submit" class='btn btn-primary send-button'>Confirmar contato realizado</button>
+        <div class="form-group">
+          <a href="{% url 'politician_list' campaign_id=campaign.pk uf=politician.uf %}" class="btn btn-danger">Não fiz o contato agora</a>
+          <button type="submit" class="btn btn-primary send-button">Confirmar contato realizado</button>
         </div>
     </form>
 </div>
