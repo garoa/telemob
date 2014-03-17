@@ -16,11 +16,14 @@ def index(request):
         campaign = Campaign.objects.get(id=1)
     except Campaign.DoesNotExist:
         campaign = {}
+    
+    contacts = Contact.objects.filter(campaign=campaign.pk).count()
 
     return render_to_response(
         'index.html', {
             'campaign': campaign,
-            'uf_list': STATE_CHOICES
+            'uf_list': STATE_CHOICES,
+            'count_contacts': contacts
         }, RequestContext(request))
 
 
