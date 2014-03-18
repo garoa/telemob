@@ -5,14 +5,14 @@ Procedimento para instalar no Windows
 Baixar e instalar o virtualenv
 ================================
 
-1. Baixe o *wheel* `virtualenv*.whl` de https://pypi.python.org/pypi/virtualenv/1.11.4
+1. Baixe o *wheel* ``virtualenv*.whl`` de https://pypi.python.org/pypi/virtualenv/1.11.4
 
-2. Abra o `virtualenv*.whl` com 7-zip ou outro utilitário de descompressão
+2. Abra o ``virtualenv*.whl`` com 7-zip ou outro utilitário de descompressão
 
 Criar e ativar o ambiente virtual
 ===================================
 
-1. Execute o script `virtualenv.py` com Python 2.7 informando o caminho completo do Python e do script. Use a opção `--no-site-packages` e informe o nome do ambiente a ser criado, neste exemplo usamos `.venv`:
+1. Execute o script ``virtualenv.py`` com Python 2.7 informando o caminho completo do Python e do script. Use a opção ``--no-site-packages`` e informe o nome do ambiente a ser criado, neste exemplo usamos ``.venv``:
 
 .. code-block::
 
@@ -20,7 +20,7 @@ Criar e ativar o ambiente virtual
   New python executable in .venv\Scripts\python.exe
   Installing setuptools, pip...done.
 
-2. Execute o script `.venv\Scripts\activate.bat`. Isso colocará o prefixo `(.venv)` no prompt:
+2. Execute o script ``.venv\Scripts\activate.bat``. Isso colocará o prefixo ``(.venv)`` no prompt:
 
 .. code-block::
 
@@ -58,16 +58,16 @@ Criar e ativar o ambiente virtual
 Baixar o Telemob
 ==================
 
-1. Utilize o `git` ou um cliente `git` gráfico como o SourceTree para clonar o repositório https://github.com/garoa/telemob.git
+1. Utilize o ``git`` ou um cliente ``git`` gráfico como o SourceTree para clonar o repositório https://github.com/garoa/telemob.git
 
-1.1. Alternativamente, baixe o `master.zip` usando o botão **Download Zip** na coluna direita da página https://github.com/garoa/telemob, e descompacte o arquivo dentro do diretório onde quer instarlar. Neste exemplo, usamos `C:\Users\luciano\prj\telemob\repo`.
+1.1. Alternativamente, baixe o ``master.zip`` usando o botão **Download Zip** na coluna direita da página https://github.com/garoa/telemob, e descompacte o arquivo dentro do diretório onde quer instarlar. Neste exemplo, usamos ``C:\Users\luciano\prj\telemob\repo``.
 
 Instalar o Telemob
 ====================
 
-Com o ambiente virtual ativado você pode usar o `pip`, e tudo o que instalar ficará dentro do diretório `.venv`.
+Com o ambiente virtual ativado você pode usar o ``pip``, e tudo o que instalar ficará dentro do diretório ``.venv``.
 
-1. Abra o `cmd.exe` vá até o diretório onde encontra o arquivo `manage.py`. Este é o diretório raiz de um projeto em Django. Em nosso exemplo, `C:\Users\luciano\prj\telemob\repo`.
+1. Abra o ``cmd.exe`` vá até o diretório onde encontra o arquivo ``manage.py``. Este é o diretório raiz de um projeto em Django. Em nosso exemplo, ``C:\Users\luciano\prj\telemob\repo``.
 
 .. code-block::
 
@@ -75,7 +75,7 @@ Com o ambiente virtual ativado você pode usar o `pip`, e tudo o que instalar fi
   (.venv) C:\Users\luciano\prj\telemob\repo>
 
 
-2. Para experimentar o projeto de uma forma simplificada, sem usar PostresSQL e sem o servidor `gunicorn`, use o `pip` com o arquivo de requisitos `simple-requirements.txt` desta maneira:
+2. Para experimentar o projeto de uma forma simplificada, sem usar PostresSQL e sem o servidor ``gunicorn``, use o ``pip`` com o arquivo de requisitos ``simple-requirements.txt`` desta maneira:
 
 .. code-block::
 
@@ -90,13 +90,13 @@ Com o ambiente virtual ativado você pode usar o `pip`, e tudo o que instalar fi
 
   (.venv) C:\Users\luciano\prj\telemob\repo>
 
-3. Copie o arquivo `.env-for-local-testing para .env:
+3. Copie o arquivo ``.env-for-local-testing`` para ``.env``:
 
 .. code-block::
 
   (.env) C:\Users\luciano\prj\telemob\repo>copy .env-for-local-testing .env
 
-4. Rode o script `manage.py` com o comando `syncdb` e a opção `--migrate`. Você terá que criar um usuário administrador para o Django:
+4. Rode o script ``manage.py`` com o comando ``syncdb`` e a opção ``--migrate``. Você terá que criar um usuário administrador para o Django:
 
 .. code-block::
 
@@ -154,7 +154,7 @@ Com o ambiente virtual ativado você pode usar o `pip`, e tudo o que instalar fi
 Executar e testar o Telemob localmente
 ========================================
 
-1. Rode o script `manage.py` com o comando `runserver`:
+1. Rode o script ``manage.py`` com o comando ``runserver``:
 
 .. code-block::
 
@@ -167,5 +167,5 @@ Executar e testar o Telemob localmente
   Starting development server at http://127.0.0.1:8000/
   Quit the server with CTRL-BREAK.
 
-2. Acesse a URL `http://127.0.0.1:8000/` com seu navegador preferido!
+2. Acesse a URL ``http://127.0.0.1:8000/`` com seu navegador preferido!
 
