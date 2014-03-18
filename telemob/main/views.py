@@ -32,7 +32,7 @@ def politician_list(request, campaign_id, uf=None):
         politician_list = Politician.objects.all()
 
     politician_list = politician_list.annotate(
-        contacts=Count('contact')).order_by('contacts')
+        contacts=Count('contact')).order_by('contacts', 'parliamentary_name')
 
     return render_to_response(
         'politician_list.html', {
