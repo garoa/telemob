@@ -21,7 +21,7 @@
             <tr>
                 <th class="text-right col-sm-1">Partido</th>
                 <th class="text-left col-sm-10">Nome ou apelido</th>
-                <th class="text-right col-sm-1">Contatos reportados</th>
+                <th id="count-contacts" class="text-right col-sm-1">Contatos reportados</th>
             </tr>
         </thead>
         <tbody>
@@ -32,9 +32,6 @@
                 <td class="text-right pol-contacts">{{ politician.contacts }}</td>
             </tr>
         {% endfor %}
-        <tr>
-          <td colspan="3" class="text-right"><b>Total: </b><span class="count-contacts"></span></td>
-        </tr>
         </tbody>
     </table>
 </div>

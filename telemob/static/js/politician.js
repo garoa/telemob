@@ -1,7 +1,10 @@
 (function() {
   var politician = {
     init: function() {
-      $('.count-contacts').text(politician.getSumContacts());
+      var total = politician.getSumContacts();
+      if (total === 1) msg = "1 contato"
+      else msg = total + " contatos"
+      $('#count-contacts').text("Total: "+msg);
     },
 
     getSumContacts: function() {
@@ -9,7 +12,7 @@
       $('table').find('.pol-contacts').each(function( index, element ) {
         var aux = $(element).text(),
             count = parseFloat(aux);
-        
+
         sum += count;
       });
 
