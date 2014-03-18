@@ -12,18 +12,24 @@ Baixar e instalar o virtualenv
 Criar e ativar o ambiente virtual
 ===================================
 
-1. Execute o script `virtualenv.py` com Python 2.7 informando o caminho completo do Python e do script. Use a opção `--no-site-packages` e informe o nome do ambiente a ser criado, neste exemplo usamos `.venv`::
+1. Execute o script `virtualenv.py` com Python 2.7 informando o caminho completo do Python e do script. Use a opção `--no-site-packages` e informe o nome do ambiente a ser criado, neste exemplo usamos `.venv`:
+
+.. code-block::
 
   C:\Users\luciano\prj\telemob>c:\Python27\python.exe c:\Python27\virtualenv-1.11.4\virtualenv.py --no-site-packages .venv
   New python executable in .venv\Scripts\python.exe
   Installing setuptools, pip...done.
 
-2. Execute o script `.venv\Scripts\activate.bat`. Isso colocará o prefixo `(.venv)` no prompt::
+2. Execute o script `.venv\Scripts\activate.bat`. Isso colocará o prefixo `(.venv)` no prompt:
+
+.. code-block::
 
   C:\Users\luciano\prj\telemob>.venv\Scripts\activate.bat
   (.venv) C:\Users\luciano\prj\telemob>
 
-3. Teste a instalação do Python. Note que a partir de agora você pode rodar o Python sem informar o caminho::
+3. Teste a instalação do Python. Note que a partir de agora você pode rodar o Python sem informar o caminho:
+
+.. code-block::
 
   (.venv) C:\Users\luciano\prj\telemob>.venv\Scripts\activate.bat
   (.venv) C:\Users\luciano\prj\telemob>python
@@ -54,7 +60,9 @@ Instalar o Telemob
 
 Com o ambiente virtual ativado você pode usar o `pip`, e tudo o que instalar ficará dentro do diretório `.venv`.
 
-1. Para experimentar o projeto sem usar PostresSQL e sem o servidor `gunicorn`, use o `pip` com o arquivo de requisitos `simple-requirements.txt` desta maneira::
+1. Para experimentar o projeto sem usar PostresSQL e sem o servidor `gunicorn`, use o `pip` com o arquivo de requisitos `simple-requirements.txt` desta maneira:
+
+.. code-block::
 
   (.venv) C:\Users\luciano\prj\telemob\repo>pip install -r simple-requirements.txt
   Downloading/unpacking Django==1.6.2 (from -r simple-requirements.txt (line 1))
@@ -67,11 +75,15 @@ Com o ambiente virtual ativado você pode usar o `pip`, e tudo o que instalar fi
 
   (.venv) C:\Users\luciano\prj\telemob\repo>
 
-2. Copie o arquivo `.env-for-local-testing para .env::
+2. Copie o arquivo `.env-for-local-testing para .env:
+
+.. code-block::
 
   (.env) C:\Users\luciano\prj\telemob\repo>copy .env-for-local-testing .env
 
-3. Rode o script `manage.py` com o comando `syncdb` e a opção `--migrate`. Você terá que criar um usuário administrador para o Django::
+3. Rode o script `manage.py` com o comando `syncdb` e a opção `--migrate`. Você terá que criar um usuário administrador para o Django:
+
+.. code-block::
 
   (.venv) C:\Users\luciano\prj\telemob\repo>python manage.py syncdb --migrate
   Syncing...
@@ -127,7 +139,9 @@ Com o ambiente virtual ativado você pode usar o `pip`, e tudo o que instalar fi
 Executar e testar o Telemob localmente
 ========================================
 
-1. Rode o script `manage.py` com o comando `runserver`::
+1. Rode o script `manage.py` com o comando `runserver`:
+
+.. code-block::
 
   (.env) C:\Users\luciano\prj\telemob\repo>python manage.py runserver
   Validating models...
