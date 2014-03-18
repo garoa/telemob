@@ -55,12 +55,27 @@ Criar e ativar o ambiente virtual
   (.venv) C:\Users\luciano\prj\telemob>
 
 
+Baixar o Telemob
+==================
+
+1. Utilize o `git` ou um cliente `git` gráfico como o SourceTree para clonar o repositório https://github.com/garoa/telemob.git
+
+1.1. Alternativamente, baixe o `master.zip` usando o botão **Download Zip** na coluna direita da página https://github.com/garoa/telemob, e descompacte o arquivo dentro do diretório onde quer instarlar. Neste exemplo, usamos `C:\Users\luciano\prj\telemob\repo`.
+
 Instalar o Telemob
 ====================
 
 Com o ambiente virtual ativado você pode usar o `pip`, e tudo o que instalar ficará dentro do diretório `.venv`.
 
-1. Para experimentar o projeto sem usar PostresSQL e sem o servidor `gunicorn`, use o `pip` com o arquivo de requisitos `simple-requirements.txt` desta maneira:
+1. Abra o `cmd.exe` vá até o diretório onde encontra o arquivo `manage.py`. Este é o diretório raiz de um projeto em Django. Em nosso exemplo, `C:\Users\luciano\prj\telemob\repo`.
+
+.. code-block::
+
+  (.venv) C:\Users\luciano\prj\telemob>cd repo
+  (.venv) C:\Users\luciano\prj\telemob\repo>
+
+
+2. Para experimentar o projeto de uma forma simplificada, sem usar PostresSQL e sem o servidor `gunicorn`, use o `pip` com o arquivo de requisitos `simple-requirements.txt` desta maneira:
 
 .. code-block::
 
@@ -75,13 +90,13 @@ Com o ambiente virtual ativado você pode usar o `pip`, e tudo o que instalar fi
 
   (.venv) C:\Users\luciano\prj\telemob\repo>
 
-2. Copie o arquivo `.env-for-local-testing para .env:
+3. Copie o arquivo `.env-for-local-testing para .env:
 
 .. code-block::
 
   (.env) C:\Users\luciano\prj\telemob\repo>copy .env-for-local-testing .env
 
-3. Rode o script `manage.py` com o comando `syncdb` e a opção `--migrate`. Você terá que criar um usuário administrador para o Django:
+4. Rode o script `manage.py` com o comando `syncdb` e a opção `--migrate`. Você terá que criar um usuário administrador para o Django:
 
 .. code-block::
 
@@ -134,7 +149,7 @@ Com o ambiente virtual ativado você pode usar o `pip`, e tudo o que instalar fi
   Migrated:
    - telemob.main
 
-(.venv) C:\Users\luciano\prj\telemob\repo>
+  (.venv) C:\Users\luciano\prj\telemob\repo>
 
 Executar e testar o Telemob localmente
 ========================================
