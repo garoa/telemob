@@ -99,6 +99,7 @@ TEMPLATE_CONTEXT_PROCESSORS = (
     'django.core.context_processors.tz',
     'django.contrib.messages.context_processors.messages',
     'django.core.context_processors.request',
+    'telemob.main.context_processors.google_tag_manager'
 )
 
 TEMPLATE_DIRS = (
@@ -113,6 +114,12 @@ SOUTH_TESTS_MIGRATE = False
 RECAPTCHA_PUBLIC_KEY = config(
     'RECAPTCHA_PUBLIC_KEY',
     default='1234567897132123'
+)
+
+# Google Tag Manager
+GTM_CONTAINER = config(
+    'GTM_CONTAINER',
+    default=None
 )
 
 RECAPTCHA_PRIVATE_KEY = config(
