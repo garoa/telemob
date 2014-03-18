@@ -84,34 +84,43 @@ class Contact(models.Model):
 
     CONTACT_CHOICES = (
         ('tel', 'Telefone'),
+        ('telegram', 'Telegrama via Web'),
         ('fax', 'Fax'),
-        ('telegrama', 'Telegrama'),
         ('email', 'E-mail')
     )
 
     RESULT_CHOICES = (
-        ('Telefone', (
-            ('0', 'Falei com o Exmo. Senhor Deputado'),
-            ('1', 'Falei com outra pessoa'),
-            ('2', 'Deixei um recado'),
-            ('3', 'Número ocupado'),
-            ('4', 'Ninguém atendeu.'),
-            ('5', 'Número inexistente ou outra falha')
+        ('Telefonei', (
+                ('10', 'Falei com o(a) Deputado(a) em pessoa.'),
+                ('11', 'Falei com outra pessoa.'),
+                ('12', 'Deixei recado em uma máquina.'),
+                ('13', 'Fone: número ocupado'),
+                ('14', 'Fone: ninguém atendeu.'),
+                ('15', 'Fone: número inexistente ou outra falha.')
             )
         ),
-        ('Fax', (
-            ('6', 'Transmissão bem sucedida'),
-            ('7', 'Número ocupado'),
-            ('8', 'Ninguém atendeu.'),
-            ('9', 'Número inexistente ou outra falha')
+        ('Enviei telegrama', (
+                ('20', 'Nada a reportar: correio vai entregar no gabinete!'),
             )
-        )
+        ),
+        ('Enviei fax', (
+                ('30', 'Fax: transmissão bem sucedida.'),
+                ('31', 'Fax: número ocupado.'),
+                ('32', 'Fax: não atendeu.'),
+                ('33', 'Fax: número inexistente ou outra falha.')
+            )
+        ),
+        ('Enviei e-mail', (
+                ('40', 'E-mail enviado e não voltou, tomara que leiam.'),
+                ('41', 'E-mail voltou com erro.'),
+            )
+        ),
     )
 
     politician = models.ForeignKey(Politician, verbose_name='Político')
     campaign = models.ForeignKey(Campaign, verbose_name='Campanha')
-    contacted_by = models.CharField(choices=CONTACT_CHOICES, max_length=10)
-    result = models.CharField(choices=RESULT_CHOICES, max_length=10, blank=True, null=True)
+    contacted_by = models.CharField(verbose_name='Contato via', choices=CONTACT_CHOICES, max_length=10)
+    result = models.CharField(verbose_name='Resultado do contato', choices=RESULT_CHOICES, max_length=10, blank=True, null=True)
     date_created = models.DateField('Criado em', auto_now_add=True)
 
     class Meta:
@@ -121,7 +130,7 @@ class Contact(models.Model):
         return '%s - %s' % (self.campaign.name, self.politician.name)
 
 class HelpText(models.Model):
-    campaign = models.ForeignKey(Campaign, verbose_name="Texto de ajuda para a campanha")
+    campaign = models.ForeignKey(Campaign, verbose_name='Texto de ajuda para a campanha')
     name = models.CharField('Nome da Ajuda', max_length=150)
     description = models.TextField('Texto de Ajuda')
     date_created = models.DateField('Criado em', auto_now_add=True)

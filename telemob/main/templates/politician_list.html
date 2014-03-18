@@ -1,25 +1,41 @@
-<html>
-<p>Lista de políticos do seu estado.</p>
-<table border='1'>
-    <thead>
-        <tr>
-            <th>Nome Parlamentar</th>
-            <th>Nome</th>
-            <th>Partido</th>
-            <th>Contatos recebidos</th>
-            <th>Estado</th>
-        </tr>
-    </thead>
-    <tbody>
-    {% for politician in politician_list %}
-        <tr>
-            <td><a href="{% url 'report_contact' campaign.id politician.id %}">{{ politician.parliamentary_name|truncatechars:30 }}</a></td>
-            <td>{{ politician.name|truncatechars:30 }}</td>
-            <td>{{ politician.political_party }}</td>
-            <td>{{ politician.contacts }}</td>
-            <td>{{ politician.uf }}</td>
-        </tr>
-    {% endfor %}
-    </tbody>
-</table>
-</html>
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block content %}
+<div class="starter-template text-center">
+    {% if messages %}
+        <div class="messages">
+            {% for message in messages %}
+            <p{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</p>
+            {% endfor %}
+        </div>
+    <h3>Escolha mais um deputado para você contatar</h3>
+    {% endif %}
+
+    {% if not messages %}
+    <h3>Passo ➀➋➂ - Escolha o deputado para você contatar</h3>
+    {% endif %}
+
+    <p><b>Atenção:</b> Para melhor distribuir a pressão, dê preferência ao primeiro da lista.</p>
+    <table class="table table-striped table-bordered table-condensed table-centered">
+        <thead>
+            <tr>
+                <th class="text-right col-sm-1">Partido</th>
+                <th class="text-left col-sm-10">Nome ou apelido</th>
+                <th id="count-contacts" class="text-right col-sm-1">Contatos reportados</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for politician in politician_list %}
+            <tr>
+                <td class="text-right">{{ politician.political_party }}</td>
+                <td class="text-left"><a href="{% url 'report_contact' campaign.id politician.id %}">{{ politician.parliamentary_name }}</a></td>
+                <td class="text-right pol-contacts">{{ politician.contacts }}</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}
+{% block js %}
+<script src="{% static 'js/politician.js' %}"></script>
+{% endblock js %}

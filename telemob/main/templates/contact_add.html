@@ -1,16 +1,107 @@
-<html>
-<h2>{{ politician.name }}</h2>
-<p>Telefone: {{ politician.tel }}</p>
-<p>Fax: {{ politician.fax }}</p>
-<p>E-mail: {{ politician.email }}</p>
-<p>Informe como entrou en contato com o político e qual a resposta!</p>
-<form action="" method="post">
-    {% csrf_token %}
-    <br/>
-    {{form.as_p}}
-    <div>
-        <a href="/contacts/contact/">Cancelar</a>
-        <button type="submit">Adicionar</button>
-    </div>
-</form>
-</html>
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block content %}
+<div class="starter-template">
+    <h3>Passo ➀➁➌ - Contatar: {{ politician.name }}</h3>
+
+<!--FIXME: dados fixos sobre deputados, generalizar para senadores -->
+    <table class="table table-bordered">
+        <tr><th>Fone</th><td>0-xx-61-{{ politician.tel }}</td>
+        <tr><th>Fax</th><td>0-xx-61-{{ politician.fax }}</td>
+        <tr><th>E-mail</th><td>{{ politician.email }}</td>
+        <tr><th>Endereço</th><td>Deputado(a) {{ politician.name }}<br>Câmara dos Deputados<br>
+                            Edifício Anexo {{ politician.annex }}, gabinete {{ politician.chamber }}<br>
+                            Brasília - DF - CEP 70160-900
+                        </td>
+    </table>
+
+    <h3>Agora é com você!</h3>
+
+    <p>O Telemob informa os contatos dos deputados, mas não envia a mensagem automaticamente – escolha uma forma de contato e envie a mensagem você mesmo. O contato personalizado é muito mais forte que mensagens automáticas.</p>
+
+<a name="meios-de-contato">&nbsp;</a>
+<h4>Escolha uma forma de contato:</h4>
+
+    <table class="table table-bordered table-striped">
+    <tr>
+        <th></th>
+        <th>Dicas</th>
+    </tr>
+    <tr>
+        <th>Telefone</th>
+        <td>Pressão interagindo por telefone é a mais forte. Fale educadamente com o deputado. Ou com o assessor que atender. Veja dicas de <a href="#a-dizer">coisas a dizer</a>.</td>
+    </tr>
+    <tr>
+        <th>Telegrama</th>
+        <td>Você envia online e o carteiro entrega em mãos. Custa R$ 4,98 e pode ser enviado pelo site dos Correios <a target="_blank" href="http://shopping.correios.com.br/wbm/store/script/wbm2400901p01.aspx?cd_company=ErZW8Dm9i54=&cd_product=IFYzQdTZeXo=">(link direto oficial)</a>. Veja <a href="#modelo-texto">modelo de texto</a>.</td>
+    </tr>
+    <tr>
+        <th>Fax</th>
+        <td>Fax tem mais chance de ser lido do que e-mail. Veja <a href="#modelo-texto">modelo de texto</a>.</td>
+    </tr>
+    <tr>
+        <th>E-mail</th>
+        <td>E-mail tem mais chance de ser ignorado. Mande e-mail personalizado mas também telefone ou envie fax ou <a  target="_blank" href="http://shopping.correios.com.br/wbm/store/script/wbm2400901p01.aspx?cd_company=ErZW8Dm9i54=&cd_product=IFYzQdTZeXo=">telegrama</a> para fazer mais pressão. Veja <a href="#modelo-texto">modelo de texto</a>.</td>
+    </tr>
+    </table>
+
+ <h4>Informe o resultado do contato</h4>
+
+    <p>Informe como entrou em contato com o parlamentar e o que aconteceu.</p>
+
+    <p><b>Atenção:</b> Reporte apenas contatos efetivados ou tentativas de ligação que você realmente fez.</p>
+
+
+    <form action="" method="post" role="form">
+        {% csrf_token %}
+
+        {% for f in form %}
+        {% if f.errors %}
+        <div class="text-danger">
+          {{ f.errors }}
+        </div>
+        {% endif %}
+        <div class="form-group">
+          <label for="id_{{ f.name }}" class="col-sm-2 control-label">
+            {{ f.label }}:
+          </label>
+          <div class="controls">
+             {{ f }}
+           </div>
+         </div>
+        {% endfor %}
+
+        <div class="form-group">
+          <a href="{% url 'politician_list' campaign_id=campaign.pk uf=politician.uf %}" class="btn btn-danger">Não fiz o contato agora</a>
+          <button type="submit" class="btn btn-primary send-button">Confirmar contato realizado</button>
+        </div>
+    </form>
+
+<a name="a-dizer" href="#meios-de-contato">(voltar)</a>
+<h4>Coisas a dizer</h4>
+
+<!--FIXME: isso tem que vir do registro da campanha! -->
+<ul>
+<li>Não queremos que a Web vire uma TV a cabo, onde só os ricos terão acesso ao que há de melhor e mais novo.</li>
+<li>O Marco Civil deve ser aprovado com a garantia da neutralidade de rede.</li>
+<li>Queremos uma lei que garanta nossa privacidade e que não permita o fatiamento da internet.</li>
+<li>Pedimos que defenda os interesses dos cidadãos e não apenas das empresas de telecomunicações.</li>
+</ul>
+
+<a name="modelo-texto" href="#meios-de-contato">(voltar)</a>
+<h4>Modelo de texto para telegrama, fax ou e-mail</h4>
+
+    <blockquote>Como eleitor de seu estado, exijo que o Marco Civil da Internet no Brasil seja votado de forma integral, preservando os conceitos de neutralidade da rede, liberdade de expressão e a privacidade do usuário de internet brasileiro. Exijo que o Excelentíssimo Sr. Deputado rejeite o lobby das empresas de telecomunicações e garanta que nenhum usuário perca seus direitos para aumentar lucro de empresas privadas.
+    </blockquote>
+
+
+</div>
+<center><a href="{% url 'about' %}" title="Sobre o Telemob"><img src="{% static 'img/telemob-formigas-400x.png' %}" title="Sete formigas carregando um graveto bem maior que elas."></a></center>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+{% endblock %}
+
+{% block js %}
+<script src="{% static 'js/contact.js' %}"></script>
+{% endblock js %}

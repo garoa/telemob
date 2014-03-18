@@ -7,10 +7,12 @@
 
     <p class="lead">{{ campaign.description }}</p>
 
-    <h3>Escolha seu estado</h3>
+    <p class="lead"><b>{{ count_contacts }}</b> contatos foram reportados pelos eleitores nesta campanha até o momento.</p>
 
-    <table class="table table-bordered table-striped">
-        {% for row in uf_list|columns:3 %}
+    <h3>Passo ➊➁➂ - Escolha o estado do seu domícilio eleitoral</h3>
+
+    <table class="table table-bordered table-condensed">
+        {% for row in uf_list|columns:4 %}
             <tr>
                 {% for uf, estado in row %}
                     <td>
