@@ -20,7 +20,8 @@ class Command(BaseCommand):
         for contact in campaign.contact_set.all():
             pol = contact.politician
             columns = [str(contact.pk), pol.uf, pol.political_party,
-                contact.contacted_by, contact.result, str(contact.date_created)]
+                contact.contacted_by, contact.result, str(contact.date_created),
+                pol.parliamentary_name]
 
             self.stdout.write('\t'.join(columns))
 
