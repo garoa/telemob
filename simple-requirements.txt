@@ -1,0 +1,12 @@
+Django==1.6.2
+South==0.8.4
+django-localflavor==1.0
+django-localflavor-br==1.0
+Unipath==1.0
+distribute==0.6.34
+dj-database-url==0.3.0
+dj-static==0.0.5
+#gunicorn==18.0
+#psycopg2==2.5.2
+python-decouple==2.2
+django-recaptcha==0.0.9
