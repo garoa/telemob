@@ -1,0 +1,2554 @@
+[
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "7", 
+      "politician": 380, 
+      "contacted_by": "fax", 
+      "date_created": "2014-03-16"
+    }, 
+    "model": "main.contact", 
+    "pk": 1
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "10", 
+      "politician": 1, 
+      "contacted_by": "tel", 
+      "date_created": "2014-03-16"
+    }, 
+    "model": "main.contact", 
+    "pk": 3
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "20", 
+      "politician": 420, 
+      "contacted_by": "telegram", 
+      "date_created": "2014-03-16"
+    }, 
+    "model": "main.contact", 
+    "pk": 4
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "11", 
+      "politician": 495, 
+      "contacted_by": "tel", 
+      "date_created": "2014-03-16"
+    }, 
+    "model": "main.contact", 
+    "pk": 5
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "41", 
+      "politician": 388, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-16"
+    }, 
+    "model": "main.contact", 
+    "pk": 6
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "20", 
+      "politician": 1, 
+      "contacted_by": "telegram", 
+      "date_created": "2014-03-16"
+    }, 
+    "model": "main.contact", 
+    "pk": 7
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 1, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-16"
+    }, 
+    "model": "main.contact", 
+    "pk": 8
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "20", 
+      "politician": 91, 
+      "contacted_by": "telegram", 
+      "date_created": "2014-03-16"
+    }, 
+    "model": "main.contact", 
+    "pk": 9
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "14", 
+      "politician": 93, 
+      "contacted_by": "tel", 
+      "date_created": "2014-03-16"
+    }, 
+    "model": "main.contact", 
+    "pk": 10
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 153, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-16"
+    }, 
+    "model": "main.contact", 
+    "pk": 11
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "20", 
+      "politician": 144, 
+      "contacted_by": "telegram", 
+      "date_created": "2014-03-16"
+    }, 
+    "model": "main.contact", 
+    "pk": 12
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "30", 
+      "politician": 394, 
+      "contacted_by": "fax", 
+      "date_created": "2014-03-16"
+    }, 
+    "model": "main.contact", 
+    "pk": 13
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "10", 
+      "politician": 396, 
+      "contacted_by": "tel", 
+      "date_created": "2014-03-16"
+    }, 
+    "model": "main.contact", 
+    "pk": 14
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "13", 
+      "politician": 379, 
+      "contacted_by": "telegram", 
+      "date_created": "2014-03-16"
+    }, 
+    "model": "main.contact", 
+    "pk": 15
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 137, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-16"
+    }, 
+    "model": "main.contact", 
+    "pk": 16
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "13", 
+      "politician": 261, 
+      "contacted_by": "tel", 
+      "date_created": "2014-03-16"
+    }, 
+    "model": "main.contact", 
+    "pk": 17
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "10", 
+      "politician": 295, 
+      "contacted_by": "telegram", 
+      "date_created": "2014-03-16"
+    }, 
+    "model": "main.contact", 
+    "pk": 18
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 76, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-16"
+    }, 
+    "model": "main.contact", 
+    "pk": 19
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 147, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-16"
+    }, 
+    "model": "main.contact", 
+    "pk": 20
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 471, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-17"
+    }, 
+    "model": "main.contact", 
+    "pk": 21
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 54, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-17"
+    }, 
+    "model": "main.contact", 
+    "pk": 22
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "41", 
+      "politician": 54, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-17"
+    }, 
+    "model": "main.contact", 
+    "pk": 23
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 195, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-17"
+    }, 
+    "model": "main.contact", 
+    "pk": 24
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 480, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-17"
+    }, 
+    "model": "main.contact", 
+    "pk": 25
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 322, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-17"
+    }, 
+    "model": "main.contact", 
+    "pk": 26
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 250, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-17"
+    }, 
+    "model": "main.contact", 
+    "pk": 27
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 85, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-17"
+    }, 
+    "model": "main.contact", 
+    "pk": 28
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 48, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-17"
+    }, 
+    "model": "main.contact", 
+    "pk": 29
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 248, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-17"
+    }, 
+    "model": "main.contact", 
+    "pk": 30
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 49, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-17"
+    }, 
+    "model": "main.contact", 
+    "pk": 31
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 471, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-17"
+    }, 
+    "model": "main.contact", 
+    "pk": 32
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 419, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-17"
+    }, 
+    "model": "main.contact", 
+    "pk": 33
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 223, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-17"
+    }, 
+    "model": "main.contact", 
+    "pk": 34
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 82, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-17"
+    }, 
+    "model": "main.contact", 
+    "pk": 35
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "10", 
+      "politician": 449, 
+      "contacted_by": "tel", 
+      "date_created": "2014-03-17"
+    }, 
+    "model": "main.contact", 
+    "pk": 36
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "30", 
+      "politician": 451, 
+      "contacted_by": "fax", 
+      "date_created": "2014-03-17"
+    }, 
+    "model": "main.contact", 
+    "pk": 37
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "20", 
+      "politician": 41, 
+      "contacted_by": "telegram", 
+      "date_created": "2014-03-17"
+    }, 
+    "model": "main.contact", 
+    "pk": 38
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 138, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-17"
+    }, 
+    "model": "main.contact", 
+    "pk": 39
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 314, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-17"
+    }, 
+    "model": "main.contact", 
+    "pk": 40
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 188, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-17"
+    }, 
+    "model": "main.contact", 
+    "pk": 41
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 293, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-17"
+    }, 
+    "model": "main.contact", 
+    "pk": 42
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "13", 
+      "politician": 157, 
+      "contacted_by": "tel", 
+      "date_created": "2014-03-17"
+    }, 
+    "model": "main.contact", 
+    "pk": 43
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "14", 
+      "politician": 315, 
+      "contacted_by": "tel", 
+      "date_created": "2014-03-17"
+    }, 
+    "model": "main.contact", 
+    "pk": 44
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "11", 
+      "politician": 216, 
+      "contacted_by": "tel", 
+      "date_created": "2014-03-17"
+    }, 
+    "model": "main.contact", 
+    "pk": 45
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 273, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-17"
+    }, 
+    "model": "main.contact", 
+    "pk": 46
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 197, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-17"
+    }, 
+    "model": "main.contact", 
+    "pk": 47
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "20", 
+      "politician": 399, 
+      "contacted_by": "telegram", 
+      "date_created": "2014-03-17"
+    }, 
+    "model": "main.contact", 
+    "pk": 48
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "13", 
+      "politician": 270, 
+      "contacted_by": "tel", 
+      "date_created": "2014-03-17"
+    }, 
+    "model": "main.contact", 
+    "pk": 49
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "13", 
+      "politician": 111, 
+      "contacted_by": "tel", 
+      "date_created": "2014-03-17"
+    }, 
+    "model": "main.contact", 
+    "pk": 50
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 430, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-17"
+    }, 
+    "model": "main.contact", 
+    "pk": 51
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "20", 
+      "politician": 73, 
+      "contacted_by": "telegram", 
+      "date_created": "2014-03-17"
+    }, 
+    "model": "main.contact", 
+    "pk": 52
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 73, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-17"
+    }, 
+    "model": "main.contact", 
+    "pk": 53
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 180, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-17"
+    }, 
+    "model": "main.contact", 
+    "pk": 54
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 257, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-17"
+    }, 
+    "model": "main.contact", 
+    "pk": 55
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 317, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-17"
+    }, 
+    "model": "main.contact", 
+    "pk": 56
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 358, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-17"
+    }, 
+    "model": "main.contact", 
+    "pk": 57
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 400, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-17"
+    }, 
+    "model": "main.contact", 
+    "pk": 58
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "20", 
+      "politician": 317, 
+      "contacted_by": "telegram", 
+      "date_created": "2014-03-17"
+    }, 
+    "model": "main.contact", 
+    "pk": 59
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 127, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-17"
+    }, 
+    "model": "main.contact", 
+    "pk": 60
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 208, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-17"
+    }, 
+    "model": "main.contact", 
+    "pk": 61
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 351, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-17"
+    }, 
+    "model": "main.contact", 
+    "pk": 62
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 319, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-17"
+    }, 
+    "model": "main.contact", 
+    "pk": 63
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 369, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-17"
+    }, 
+    "model": "main.contact", 
+    "pk": 64
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 212, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-17"
+    }, 
+    "model": "main.contact", 
+    "pk": 65
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "11", 
+      "politician": 348, 
+      "contacted_by": "tel", 
+      "date_created": "2014-03-17"
+    }, 
+    "model": "main.contact", 
+    "pk": 66
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 180, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-17"
+    }, 
+    "model": "main.contact", 
+    "pk": 67
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 121, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-17"
+    }, 
+    "model": "main.contact", 
+    "pk": 68
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 387, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-17"
+    }, 
+    "model": "main.contact", 
+    "pk": 69
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 278, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-17"
+    }, 
+    "model": "main.contact", 
+    "pk": 70
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 214, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-17"
+    }, 
+    "model": "main.contact", 
+    "pk": 71
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 89, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-17"
+    }, 
+    "model": "main.contact", 
+    "pk": 72
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 109, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-17"
+    }, 
+    "model": "main.contact", 
+    "pk": 73
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 75, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-17"
+    }, 
+    "model": "main.contact", 
+    "pk": 74
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 424, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-17"
+    }, 
+    "model": "main.contact", 
+    "pk": 75
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 467, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-17"
+    }, 
+    "model": "main.contact", 
+    "pk": 76
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 440, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-17"
+    }, 
+    "model": "main.contact", 
+    "pk": 77
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 309, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-17"
+    }, 
+    "model": "main.contact", 
+    "pk": 78
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 275, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-17"
+    }, 
+    "model": "main.contact", 
+    "pk": 79
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 302, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-17"
+    }, 
+    "model": "main.contact", 
+    "pk": 80
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "41", 
+      "politician": 390, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-17"
+    }, 
+    "model": "main.contact", 
+    "pk": 81
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 272, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-17"
+    }, 
+    "model": "main.contact", 
+    "pk": 82
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 306, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-17"
+    }, 
+    "model": "main.contact", 
+    "pk": 83
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "11", 
+      "politician": 492, 
+      "contacted_by": "tel", 
+      "date_created": "2014-03-17"
+    }, 
+    "model": "main.contact", 
+    "pk": 84
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 21, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-17"
+    }, 
+    "model": "main.contact", 
+    "pk": 85
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 14, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-17"
+    }, 
+    "model": "main.contact", 
+    "pk": 86
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 424, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-17"
+    }, 
+    "model": "main.contact", 
+    "pk": 87
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 83, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-17"
+    }, 
+    "model": "main.contact", 
+    "pk": 88
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 479, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-17"
+    }, 
+    "model": "main.contact", 
+    "pk": 89
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 447, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-17"
+    }, 
+    "model": "main.contact", 
+    "pk": 90
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "30", 
+      "politician": 471, 
+      "contacted_by": "fax", 
+      "date_created": "2014-03-17"
+    }, 
+    "model": "main.contact", 
+    "pk": 91
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "30", 
+      "politician": 127, 
+      "contacted_by": "fax", 
+      "date_created": "2014-03-17"
+    }, 
+    "model": "main.contact", 
+    "pk": 92
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 216, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-17"
+    }, 
+    "model": "main.contact", 
+    "pk": 93
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 421, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-17"
+    }, 
+    "model": "main.contact", 
+    "pk": 94
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "11", 
+      "politician": 147, 
+      "contacted_by": "tel", 
+      "date_created": "2014-03-17"
+    }, 
+    "model": "main.contact", 
+    "pk": 95
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 51, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-17"
+    }, 
+    "model": "main.contact", 
+    "pk": 96
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 335, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-17"
+    }, 
+    "model": "main.contact", 
+    "pk": 97
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 374, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-17"
+    }, 
+    "model": "main.contact", 
+    "pk": 98
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 371, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-17"
+    }, 
+    "model": "main.contact", 
+    "pk": 99
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 105, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-17"
+    }, 
+    "model": "main.contact", 
+    "pk": 100
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 146, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-17"
+    }, 
+    "model": "main.contact", 
+    "pk": 101
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 11, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-17"
+    }, 
+    "model": "main.contact", 
+    "pk": 102
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 411, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-17"
+    }, 
+    "model": "main.contact", 
+    "pk": 103
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 407, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-17"
+    }, 
+    "model": "main.contact", 
+    "pk": 104
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 38, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-17"
+    }, 
+    "model": "main.contact", 
+    "pk": 105
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "41", 
+      "politician": 407, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-17"
+    }, 
+    "model": "main.contact", 
+    "pk": 106
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 322, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-17"
+    }, 
+    "model": "main.contact", 
+    "pk": 107
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 69, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-18"
+    }, 
+    "model": "main.contact", 
+    "pk": 108
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 86, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-18"
+    }, 
+    "model": "main.contact", 
+    "pk": 109
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "11", 
+      "politician": 50, 
+      "contacted_by": "tel", 
+      "date_created": "2014-03-18"
+    }, 
+    "model": "main.contact", 
+    "pk": 110
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "11", 
+      "politician": 260, 
+      "contacted_by": "tel", 
+      "date_created": "2014-03-18"
+    }, 
+    "model": "main.contact", 
+    "pk": 111
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 503, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-18"
+    }, 
+    "model": "main.contact", 
+    "pk": 112
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "11", 
+      "politician": 180, 
+      "contacted_by": "tel", 
+      "date_created": "2014-03-18"
+    }, 
+    "model": "main.contact", 
+    "pk": 113
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 46, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-18"
+    }, 
+    "model": "main.contact", 
+    "pk": 114
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 8, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-18"
+    }, 
+    "model": "main.contact", 
+    "pk": 115
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 125, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-18"
+    }, 
+    "model": "main.contact", 
+    "pk": 116
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "11", 
+      "politician": 60, 
+      "contacted_by": "tel", 
+      "date_created": "2014-03-18"
+    }, 
+    "model": "main.contact", 
+    "pk": 117
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 202, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-18"
+    }, 
+    "model": "main.contact", 
+    "pk": 118
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "12", 
+      "politician": 412, 
+      "contacted_by": "tel", 
+      "date_created": "2014-03-18"
+    }, 
+    "model": "main.contact", 
+    "pk": 119
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "11", 
+      "politician": 217, 
+      "contacted_by": "tel", 
+      "date_created": "2014-03-18"
+    }, 
+    "model": "main.contact", 
+    "pk": 120
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 2, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-18"
+    }, 
+    "model": "main.contact", 
+    "pk": 121
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 13, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-18"
+    }, 
+    "model": "main.contact", 
+    "pk": 122
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 18, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-18"
+    }, 
+    "model": "main.contact", 
+    "pk": 123
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 303, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-18"
+    }, 
+    "model": "main.contact", 
+    "pk": 124
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 280, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-18"
+    }, 
+    "model": "main.contact", 
+    "pk": 125
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 130, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-18"
+    }, 
+    "model": "main.contact", 
+    "pk": 126
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 40, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-18"
+    }, 
+    "model": "main.contact", 
+    "pk": 127
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 161, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-18"
+    }, 
+    "model": "main.contact", 
+    "pk": 128
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 40, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-18"
+    }, 
+    "model": "main.contact", 
+    "pk": 129
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 124, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-18"
+    }, 
+    "model": "main.contact", 
+    "pk": 130
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 143, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-18"
+    }, 
+    "model": "main.contact", 
+    "pk": 131
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 175, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-18"
+    }, 
+    "model": "main.contact", 
+    "pk": 132
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 196, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-18"
+    }, 
+    "model": "main.contact", 
+    "pk": 133
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 198, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-18"
+    }, 
+    "model": "main.contact", 
+    "pk": 134
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 210, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-18"
+    }, 
+    "model": "main.contact", 
+    "pk": 135
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 485, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-18"
+    }, 
+    "model": "main.contact", 
+    "pk": 136
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "41", 
+      "politician": 175, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-18"
+    }, 
+    "model": "main.contact", 
+    "pk": 137
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 227, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-18"
+    }, 
+    "model": "main.contact", 
+    "pk": 138
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 238, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-18"
+    }, 
+    "model": "main.contact", 
+    "pk": 139
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 346, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-18"
+    }, 
+    "model": "main.contact", 
+    "pk": 140
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 349, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-18"
+    }, 
+    "model": "main.contact", 
+    "pk": 141
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 4, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-18"
+    }, 
+    "model": "main.contact", 
+    "pk": 142
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 484, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-18"
+    }, 
+    "model": "main.contact", 
+    "pk": 143
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 88, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-18"
+    }, 
+    "model": "main.contact", 
+    "pk": 144
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 108, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-18"
+    }, 
+    "model": "main.contact", 
+    "pk": 145
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 152, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-18"
+    }, 
+    "model": "main.contact", 
+    "pk": 146
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 417, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-18"
+    }, 
+    "model": "main.contact", 
+    "pk": 147
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 127, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-18"
+    }, 
+    "model": "main.contact", 
+    "pk": 148
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 180, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-18"
+    }, 
+    "model": "main.contact", 
+    "pk": 149
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 427, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-18"
+    }, 
+    "model": "main.contact", 
+    "pk": 150
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 353, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-18"
+    }, 
+    "model": "main.contact", 
+    "pk": 151
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 391, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-18"
+    }, 
+    "model": "main.contact", 
+    "pk": 152
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "11", 
+      "politician": 304, 
+      "contacted_by": "tel", 
+      "date_created": "2014-03-18"
+    }, 
+    "model": "main.contact", 
+    "pk": 153
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "11", 
+      "politician": 436, 
+      "contacted_by": "tel", 
+      "date_created": "2014-03-18"
+    }, 
+    "model": "main.contact", 
+    "pk": 154
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "11", 
+      "politician": 412, 
+      "contacted_by": "tel", 
+      "date_created": "2014-03-18"
+    }, 
+    "model": "main.contact", 
+    "pk": 155
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "11", 
+      "politician": 403, 
+      "contacted_by": "tel", 
+      "date_created": "2014-03-18"
+    }, 
+    "model": "main.contact", 
+    "pk": 156
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "10", 
+      "politician": 6, 
+      "contacted_by": "tel", 
+      "date_created": "2014-03-18"
+    }, 
+    "model": "main.contact", 
+    "pk": 157
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "11", 
+      "politician": 149, 
+      "contacted_by": "tel", 
+      "date_created": "2014-03-18"
+    }, 
+    "model": "main.contact", 
+    "pk": 158
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "11", 
+      "politician": 147, 
+      "contacted_by": "tel", 
+      "date_created": "2014-03-18"
+    }, 
+    "model": "main.contact", 
+    "pk": 159
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 225, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-18"
+    }, 
+    "model": "main.contact", 
+    "pk": 160
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "11", 
+      "politician": 483, 
+      "contacted_by": "tel", 
+      "date_created": "2014-03-18"
+    }, 
+    "model": "main.contact", 
+    "pk": 161
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "11", 
+      "politician": 426, 
+      "contacted_by": "tel", 
+      "date_created": "2014-03-18"
+    }, 
+    "model": "main.contact", 
+    "pk": 162
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "10", 
+      "politician": 404, 
+      "contacted_by": "tel", 
+      "date_created": "2014-03-18"
+    }, 
+    "model": "main.contact", 
+    "pk": 163
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "10", 
+      "politician": 267, 
+      "contacted_by": "tel", 
+      "date_created": "2014-03-18"
+    }, 
+    "model": "main.contact", 
+    "pk": 164
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 49, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-18"
+    }, 
+    "model": "main.contact", 
+    "pk": 165
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 481, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-18"
+    }, 
+    "model": "main.contact", 
+    "pk": 166
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 72, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-19"
+    }, 
+    "model": "main.contact", 
+    "pk": 167
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 128, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-19"
+    }, 
+    "model": "main.contact", 
+    "pk": 168
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "11", 
+      "politician": 451, 
+      "contacted_by": "tel", 
+      "date_created": "2014-03-19"
+    }, 
+    "model": "main.contact", 
+    "pk": 169
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 451, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-19"
+    }, 
+    "model": "main.contact", 
+    "pk": 170
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 396, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-19"
+    }, 
+    "model": "main.contact", 
+    "pk": 171
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 277, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-19"
+    }, 
+    "model": "main.contact", 
+    "pk": 172
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 215, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-19"
+    }, 
+    "model": "main.contact", 
+    "pk": 173
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 67, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-19"
+    }, 
+    "model": "main.contact", 
+    "pk": 174
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 396, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-19"
+    }, 
+    "model": "main.contact", 
+    "pk": 175
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 83, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-19"
+    }, 
+    "model": "main.contact", 
+    "pk": 176
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 314, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-19"
+    }, 
+    "model": "main.contact", 
+    "pk": 177
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 14, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-19"
+    }, 
+    "model": "main.contact", 
+    "pk": 178
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 477, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-19"
+    }, 
+    "model": "main.contact", 
+    "pk": 179
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 500, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-19"
+    }, 
+    "model": "main.contact", 
+    "pk": 180
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 290, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-19"
+    }, 
+    "model": "main.contact", 
+    "pk": 181
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "30", 
+      "politician": 17, 
+      "contacted_by": "fax", 
+      "date_created": "2014-03-19"
+    }, 
+    "model": "main.contact", 
+    "pk": 182
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "20", 
+      "politician": 175, 
+      "contacted_by": "telegram", 
+      "date_created": "2014-03-19"
+    }, 
+    "model": "main.contact", 
+    "pk": 183
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 412, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-19"
+    }, 
+    "model": "main.contact", 
+    "pk": 184
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 181, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-19"
+    }, 
+    "model": "main.contact", 
+    "pk": 185
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 25, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-19"
+    }, 
+    "model": "main.contact", 
+    "pk": 186
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 26, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-19"
+    }, 
+    "model": "main.contact", 
+    "pk": 187
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 61, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-19"
+    }, 
+    "model": "main.contact", 
+    "pk": 188
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 21, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-19"
+    }, 
+    "model": "main.contact", 
+    "pk": 189
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 180, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-19"
+    }, 
+    "model": "main.contact", 
+    "pk": 190
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 108, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-19"
+    }, 
+    "model": "main.contact", 
+    "pk": 191
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 41, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-19"
+    }, 
+    "model": "main.contact", 
+    "pk": 192
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 127, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-19"
+    }, 
+    "model": "main.contact", 
+    "pk": 193
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 433, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-19"
+    }, 
+    "model": "main.contact", 
+    "pk": 194
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "20", 
+      "politician": 46, 
+      "contacted_by": "telegram", 
+      "date_created": "2014-03-19"
+    }, 
+    "model": "main.contact", 
+    "pk": 195
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "11", 
+      "politician": 16, 
+      "contacted_by": "tel", 
+      "date_created": "2014-03-19"
+    }, 
+    "model": "main.contact", 
+    "pk": 196
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "11", 
+      "politician": 48, 
+      "contacted_by": "tel", 
+      "date_created": "2014-03-19"
+    }, 
+    "model": "main.contact", 
+    "pk": 197
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 48, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-19"
+    }, 
+    "model": "main.contact", 
+    "pk": 198
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 3, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-19"
+    }, 
+    "model": "main.contact", 
+    "pk": 199
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 42, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-19"
+    }, 
+    "model": "main.contact", 
+    "pk": 200
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 50, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-19"
+    }, 
+    "model": "main.contact", 
+    "pk": 201
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 260, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-19"
+    }, 
+    "model": "main.contact", 
+    "pk": 202
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 505, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-19"
+    }, 
+    "model": "main.contact", 
+    "pk": 203
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 507, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-19"
+    }, 
+    "model": "main.contact", 
+    "pk": 204
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 510, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-19"
+    }, 
+    "model": "main.contact", 
+    "pk": 205
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 497, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-19"
+    }, 
+    "model": "main.contact", 
+    "pk": 206
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 363, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-19"
+    }, 
+    "model": "main.contact", 
+    "pk": 207
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 347, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-19"
+    }, 
+    "model": "main.contact", 
+    "pk": 208
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 291, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-19"
+    }, 
+    "model": "main.contact", 
+    "pk": 209
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 286, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-19"
+    }, 
+    "model": "main.contact", 
+    "pk": 210
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 264, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-19"
+    }, 
+    "model": "main.contact", 
+    "pk": 211
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 189, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-19"
+    }, 
+    "model": "main.contact", 
+    "pk": 212
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 142, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-19"
+    }, 
+    "model": "main.contact", 
+    "pk": 213
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 184, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-20"
+    }, 
+    "model": "main.contact", 
+    "pk": 214
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 43, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-20"
+    }, 
+    "model": "main.contact", 
+    "pk": 215
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 44, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-20"
+    }, 
+    "model": "main.contact", 
+    "pk": 216
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 65, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-20"
+    }, 
+    "model": "main.contact", 
+    "pk": 217
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "20", 
+      "politician": 104, 
+      "contacted_by": "telegram", 
+      "date_created": "2014-03-20"
+    }, 
+    "model": "main.contact", 
+    "pk": 218
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 499, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-20"
+    }, 
+    "model": "main.contact", 
+    "pk": 219
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 68, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-20"
+    }, 
+    "model": "main.contact", 
+    "pk": 220
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "41", 
+      "politician": 390, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-20"
+    }, 
+    "model": "main.contact", 
+    "pk": 221
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 133, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-20"
+    }, 
+    "model": "main.contact", 
+    "pk": 222
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 95, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-20"
+    }, 
+    "model": "main.contact", 
+    "pk": 223
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 159, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-20"
+    }, 
+    "model": "main.contact", 
+    "pk": 224
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 300, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-20"
+    }, 
+    "model": "main.contact", 
+    "pk": 225
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 85, 
+      "contacted_by": "telegram", 
+      "date_created": "2014-03-21"
+    }, 
+    "model": "main.contact", 
+    "pk": 226
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 46, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-21"
+    }, 
+    "model": "main.contact", 
+    "pk": 227
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 76, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-21"
+    }, 
+    "model": "main.contact", 
+    "pk": 228
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "10", 
+      "politician": 399, 
+      "contacted_by": "tel", 
+      "date_created": "2014-03-22"
+    }, 
+    "model": "main.contact", 
+    "pk": 229
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "11", 
+      "politician": 69, 
+      "contacted_by": "tel", 
+      "date_created": "2014-03-25"
+    }, 
+    "model": "main.contact", 
+    "pk": 230
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 216, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-25"
+    }, 
+    "model": "main.contact", 
+    "pk": 231
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 273, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-28"
+    }, 
+    "model": "main.contact", 
+    "pk": 232
+  }, 
+  {
+    "fields": {
+      "campaign": 1, 
+      "result": "40", 
+      "politician": 273, 
+      "contacted_by": "email", 
+      "date_created": "2014-03-28"
+    }, 
+    "model": "main.contact", 
+    "pk": 233
+  }
+]
