@@ -53,7 +53,7 @@ with open('deputados.tab') as entrada:
         if idx == 0: continue # pular linha 1
         campos = [campo for i, campo in enumerate(lin) if i not in IGNORAR]
         campos = dict(zip(NOMES_CAMPOS, campos))
-        campos['last_updated'] = campos['date_created'] = '2014-03-14'
+        campos['last_updated'] = campos['date_created'] = '2015-01-25'
         campos['annex'] = int(campos['annex'])
         campos['chamber'] = int(campos['chamber'])
         registro = dict(pk=idx, model='main.politician', fields=campos)
@@ -63,4 +63,3 @@ with open('deputados.json', 'wt', encoding='utf-8') as saida:
     json.dump(registros, saida)
 
 print(idx, 'registros gerados')
-
