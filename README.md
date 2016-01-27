@@ -16,6 +16,15 @@ mv .rename-to-dotenv .env
 ```
 Coloque no arquivo .env as credenciais do reCaptcha (http://www.google.com/recaptcha)
 
+##Vagrant
+
+Se você usa vagrant, basta digitar:
+
+```
+vagrant up
+vagrant ssh
+```
+
 ##Rodando o projeto
 ```
 python manage.py runserver
