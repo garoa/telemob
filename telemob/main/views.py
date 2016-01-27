@@ -12,11 +12,7 @@ from .models import Campaign, Politician, Contact
 
 
 def index(request):
-    try:
-        campaign = Campaign.objects.get(id=1)
-    except Campaign.DoesNotExist:
-        campaign = {}
-    
+    campaign = get_object_or_404(Campaign, id=1)
     contacts = Contact.objects.filter(campaign=campaign.pk).count()
 
     return render_to_response(
