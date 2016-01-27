@@ -2,9 +2,11 @@
   var contact = {
     init: function(){
       contact.check_selected();
+      $(document).on('change', '#id_contacted_by', function(){
+        contact.change_optgroup();
+      });
       $(document).on('change', 'select', function(){
         contact.check_selected();
-        contact.change_optgroup();
       });
     },
     create_optgroup: function(group){
@@ -67,7 +69,7 @@
       $('#id_result').html(opt_group);
     },
     check_selected: function(){
-      var result = $('#id_result optgroup option').is(':selected'),
+      var result = $('#id_result option').is(':selected'),
           id_contacted = $('#id_contacted_by');
 
       if ( result && id_contacted.val() || id_contacted.val() === 'telegram' ) {
