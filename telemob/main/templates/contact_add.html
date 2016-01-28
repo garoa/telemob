@@ -9,7 +9,13 @@
     <table class="table table-bordered">
         <tr><th>Fone</th><td>0-xx-61-{{ politician.tel }}</td>
         <tr><th>Fax</th><td>0-xx-61-{{ politician.fax }}</td>
-        <tr><th>E-mail</th><td>{{ politician.email }}</td>
+        <tr>
+            <th>E-mail</th>
+            <td>
+                <a href="mailto:{{ politician.email }}?body=Como eleitor de seu estado, exijo que VSa. Excelência vote contra o PL215/2015, preservando os conceitos de liberdade de expressão e a privacidade do usuário da Internet consagrados no Marco Civil, uma legislação reconhecida mundialmene como um grande exemplo da democracia brasileira.">
+                    {{ politician.email }}
+                </a>
+            </td>
         <tr><th>Endereço</th><td>Deputado(a) {{ politician.name }}<br>Câmara dos Deputados<br>
                             Edifício Anexo {{ politician.annex }}, gabinete {{ politician.chamber }}<br>
                             Brasília - DF - CEP 70160-900
