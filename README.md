@@ -7,7 +7,7 @@
 git clone https://github.com/garoa/telemob.git
 cd telemob
 pip install -r requirements
-python manage.py syncdb --migrate
+python manage.py migrate
 ```
 
 ##Configurar ambiente
@@ -27,28 +27,27 @@ vagrant ssh
 
 ##Rodando o projeto
 ```
-python manage.py runserver
+python manage.py runserver 0.0.0.0:8000
 ```
 
 #Para instalar no Heroku
 
 ```
 heroku create telemob
-heroku labs:enable user-env-compile
 heroku config:set 'SECRET_KEY=VALOR-RANDOMICO-QUE-O-STARTPROJECT-GERA-PRA-VC'
 heroku config:set DEBUG=False
 heroku config:set 'RECAPTCHA_PUBLIC_KEY=CHAVE-PUBLICA-DO-RECAPTCHA'
 heroku config:set 'RECAPTCHA_PRIVATE_KEY=CHAVE-PRIVADA-DO-RECAPTCHA'
 heroku config:set 'GTM_CONTAINER=CONTAINER-DO-GOOGLE-TAG-MANAGER'
 git push heroku master
-heroku run python manage.py syncdb --migrate
+heroku run python manage.py migrate
 ```
 
 #Para fazer deploy no Heroku
 
 ```
 git push heroku master
-heroku run python manage.py syncdb --migrate
+heroku run python manage.py migrate
 ```
 
 #Gerar credenciais do reCaptcha
