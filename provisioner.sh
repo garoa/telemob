@@ -11,6 +11,6 @@ sudo apt-get install -y \
 sudo -H pip install --upgrade pip
 
 cd /vagrant
-sudo pip install -r requirements.txt
+sudo pip install -Ur requirements.txt
 
 echo "cd /vagrant" >> ~/.bashrc
