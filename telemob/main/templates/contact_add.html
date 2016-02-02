@@ -12,7 +12,7 @@
         <tr>
             <th>E-mail</th>
             <td>
-                <a href="mailto:{{ politician.email }}?body=Como eleitor de seu estado, exijo que VSa. Excelência vote contra o PL215/2015, preservando os conceitos de liberdade de expressão e a privacidade do usuário da Internet consagrados no Marco Civil, uma legislação reconhecida mundialmene como um grande exemplo da democracia brasileira.">
+                <a href="mailto:{{ politician.email }}?body={{ campaign.template_text }}">
                     {{ politician.email }}
                 </a>
             </td>
@@ -105,7 +105,8 @@ democrática.</li>
 <a name="modelo-texto" href="#meios-de-contato">(voltar)</a>
 <h4>Modelo de texto para telegrama, fax ou e-mail</h4>
 
-    <blockquote>Como eleitor de seu estado, requeiro expressamente que VSa. Excelência vote contra o PL215/2015, preservando os conceitos de liberdade de expressão e a privacidade do usuário da Internet consagrados no Marco Civil, uma legislação reconhecida mundialmene como um grande exemplo da democracia brasileira.
+    <blockquote>
+        {{ campaign.template_text }}
     </blockquote>
 
 
