@@ -19,6 +19,11 @@ class Campaign(models.Model):
         return self.name
 
 
+class Argument(models.Model):
+    campaign = models.ForeignKey('Campaign', verbose_name='Campanha')
+    text = models.TextField('Texto do argumento')
+
+
 class Politician(models.Model):
     PARTY_CHOICES = (
         ('PMDB', 'PMDB - Partido Do Movimento Democrático Brasileiro'),
