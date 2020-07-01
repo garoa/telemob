@@ -1,4 +1,4 @@
-Para saber a ideia do projeto, leia: [Telemob](https://garoa.net.br/wiki/Telemob)
+Para saber a ideia do projeto, leia: [Telemob](https://garoa.net.br/wiki/Telemob) no Wiki do Garoa Hacker Clube
 
 # Como Contribuir
 
