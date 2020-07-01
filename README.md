@@ -1,3 +1,5 @@
+Para saber a ideia do projeto, leia: [Telemob no Wiki do Garoa Hacker Clube](https://garoa.net.br/wiki/Telemob).
+
 # Como Contribuir
 
 **Ao fazer um pull-request, assegure-se de que os mantenedores do projeto sabem o seu nome e o seu e-mail. Se não tivermos essas informações, não aceitaremos seu pull-request, por melhor que seja.**
@@ -33,7 +35,7 @@ vagrant ssh
 python manage.py runserver 0.0.0.0:8000
 ```
 
-# Para instalar no Heroku
+## Para instalar no Heroku
 
 ```
 heroku create telemob
@@ -46,7 +48,7 @@ git push heroku master
 heroku run python manage.py migrate
 ```
 
-# Para fazer deploy no Heroku
+## Para fazer deploy no Heroku?
 
 ```
 git push heroku master
@@ -62,4 +64,3 @@ Para gerar as credenciais do reCaptcha acesse http://www.google.com/recaptcha
 Através do Google Tag Manager é possível configurar o Google Analytics e outras ferramentas externas.
 
 Para configurar uma conta acesse: https://www.google.com/tagmanager
-
