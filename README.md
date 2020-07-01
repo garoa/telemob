@@ -1,4 +1,6 @@
-#Como Contribuir
+Para saber a ideia do projeto, leia: [Telemob](https://garoa.net.br/wiki/Telemob)
+
+# Como Contribuir
 
 **Ao fazer um pull-request, assegure-se de que os mantenedores do projeto sabem o seu nome e o seu e-mail. Se não tivermos essas informações, não aceitaremos seu pull-request, por melhor que seja.**
 
@@ -10,13 +12,14 @@ pip install -r requirements
 python manage.py migrate
 ```
 
-##Configurar ambiente
+## Configurar ambiente
+
 ```
 mv .rename-to-dotenv .env
 ```
 Coloque no arquivo .env as credenciais do reCaptcha (http://www.google.com/recaptcha)
 
-##Vagrant
+## Vagrant
 
 Se você usa vagrant, basta digitar:
 
@@ -25,12 +28,12 @@ vagrant up
 vagrant ssh
 ```
 
-##Rodando o projeto
+## Rodando o projeto
 ```
 python manage.py runserver 0.0.0.0:8000
 ```
 
-#Para instalar no Heroku
+## Para instalar no Heroku
 
 ```
 heroku create telemob
@@ -43,7 +46,7 @@ git push heroku master
 heroku run python manage.py migrate
 ```
 
-#Para fazer deploy no Heroku
+## Para fazer deploy no Heroku
 
 ```
 git push heroku master
