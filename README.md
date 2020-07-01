@@ -14,7 +14,7 @@ python manage.py migrate
 ## Configurar ambiente
 
 ```
-mv .rename-to-dotenv .env
+cp .rename-to-dotenv .env
 ```
 Coloque no arquivo .env as [credenciais do reCaptcha](http://www.google.com/recaptcha).
 
@@ -62,3 +62,4 @@ Para gerar as credenciais do reCaptcha acesse http://www.google.com/recaptcha
 Através do Google Tag Manager é possível configurar o Google Analytics e outras ferramentas externas.
 
 Para configurar uma conta acesse: https://www.google.com/tagmanager
+
