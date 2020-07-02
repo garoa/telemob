@@ -1,10 +1,7 @@
-# -*- coding: utf-8 -*-
-from __future__ import unicode_literals
-
 from django.db.models import Count
 from django.template import RequestContext
 from localflavor.br.br_states import STATE_CHOICES
-from django.shortcuts import get_object_or_404, redirect, render_to_response
+from django.shortcuts import get_object_or_404, redirect, render
 from django.contrib import messages
 
 from .forms import ContactForm
@@ -15,12 +12,13 @@ def index(request):
     campaign = get_object_or_404(Campaign, id=1)
     contacts = Contact.objects.filter(campaign=campaign.pk).count()
 
-    return render_to_response(
+    return render(
+        request,
         'index.html', {
             'campaign': campaign,
             'uf_list': STATE_CHOICES,
             'count_contacts': contacts
-        }, RequestContext(request))
+        })
 
 
 def politician_list(request, campaign_id, uf=None):
@@ -33,12 +31,13 @@ def politician_list(request, campaign_id, uf=None):
     politician_list = politician_list.annotate(
         contacts=Count('contact')).order_by('contacts', 'parliamentary_name')
 
-    return render_to_response(
+    return render(
+        request,
         'politician_list.html', {
             'politician_list': politician_list,
             'campaign': campaign,
             'uf_list': STATE_CHOICES
-        }, RequestContext(request))
+        })
 
 
 def report_contact(request, campaign_id, politician_id):
@@ -57,9 +56,10 @@ def report_contact(request, campaign_id, politician_id):
         return redirect('politician_list', campaign_id=campaign.pk,
             uf=politician.uf)
 
-    return render_to_response(
+    return render(
+        request,
         'contact_add.html', {
             'form': form,
             'politician': politician,
             'campaign': campaign
-        }, RequestContext(request))
+        })

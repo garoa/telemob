@@ -1,4 +1,3 @@
-# coding: utf-8
 """
 Django settings for telemob project.
 
@@ -9,11 +8,13 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/1.6/ref/settings/
 """
 
+from pathlib import Path
+
 from decouple import config
 from dj_database_url import parse as db_url
-from unipath import Path
-BASE_DIR = Path(__file__).parent
 
+
+BASE_DIR = Path().parent.absolute()
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.6/howto/deployment/checklist/
@@ -42,16 +43,42 @@ INSTALLED_APPS = (
     'telemob.main',
 )
 
-MIDDLEWARE_CLASSES = (
+MIDDLEWARE = (
+    'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'django.middleware.locale.LocaleMiddleware',
 )
 
 ROOT_URLCONF = 'telemob.urls'
+
+
+TEMPLATES = [
+    {
+        "BACKEND": "django.template.backends.django.DjangoTemplates",
+        "DIRS": [
+            BASE_DIR / 'telemob' / 'templates',
+        ],
+        "APP_DIRS": True,
+        "OPTIONS": {
+            "context_processors": [
+                'django.contrib.auth.context_processors.auth',
+                'django.template.context_processors.debug',
+                'django.contrib.messages.context_processors.messages',
+                'django.template.context_processors.i18n',
+                'django.template.context_processors.media',
+                'django.template.context_processors.static',
+                'django.template.context_processors.tz',
+                'django.template.context_processors.request',
+                'telemob.main.context_processors.google_tag_manager'
+            ],
+        },
+    },
+]
 
 WSGI_APPLICATION = 'telemob.wsgi.application'
 
@@ -62,7 +89,7 @@ WSGI_APPLICATION = 'telemob.wsgi.application'
 DATABASES = {
     'default': config(
         'DATABASE_URL',
-        default='sqlite:///' + BASE_DIR.child('db.sqlite3'),
+        default='sqlite:///' + str(BASE_DIR / 'db.sqlite3'),
         cast=db_url),
 }
 
@@ -83,26 +110,10 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.6/howto/static-files/
 
-STATIC_ROOT = BASE_DIR.child('staticfiles')
+STATIC_ROOT = BASE_DIR / 'staticfiles'
 STATIC_URL = '/static/'
 STATICFILES_DIRS = (
-    BASE_DIR.child('static'),
-)
-
-TEMPLATE_CONTEXT_PROCESSORS = (
-    'django.contrib.auth.context_processors.auth',
-    'django.core.context_processors.debug',
-    'django.core.context_processors.i18n',
-    'django.core.context_processors.media',
-    'django.core.context_processors.static',
-    'django.core.context_processors.tz',
-    'django.contrib.messages.context_processors.messages',
-    'django.core.context_processors.request',
-    'telemob.main.context_processors.google_tag_manager'
-)
-
-TEMPLATE_DIRS = (
-    BASE_DIR.child('templates'),
+    BASE_DIR / 'telemob' / 'static',
 )
 
 SESSION_EXPIRE_AT_BROWSER_CLOSE = True
