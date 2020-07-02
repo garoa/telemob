@@ -1,10 +1,11 @@
-Para saber a ideia do projeto, leia: [Telemob](https://garoa.net.br/wiki/Telemob) no Wiki do Garoa Hacker Clube
+Para saber a ideia do projeto, leia: [Telemob no Wiki do Garoa Hacker Clube](https://garoa.net.br/wiki/Telemob).
 
 # Como Contribuir
 
 **Ao fazer um pull-request, assegure-se de que os mantenedores do projeto sabem o seu nome e o seu e-mail. Se não tivermos essas informações, não aceitaremos seu pull-request, por melhor que seja.**
 
-##Clonar código e instalar dependências
+## Clonar código e instalar dependências
+
 ```
 git clone https://github.com/garoa/telemob.git
 cd telemob
@@ -15,9 +16,9 @@ python manage.py migrate
 ## Configurar ambiente
 
 ```
-mv .rename-to-dotenv .env
+cp .rename-to-dotenv .env
 ```
-Coloque no arquivo .env as credenciais do reCaptcha (http://www.google.com/recaptcha)
+Coloque no arquivo .env as [credenciais do reCaptcha](http://www.google.com/recaptcha).
 
 ## Vagrant
 
@@ -29,6 +30,7 @@ vagrant ssh
 ```
 
 ## Rodando o projeto
+
 ```
 python manage.py runserver 0.0.0.0:8000
 ```
@@ -46,15 +48,19 @@ git push heroku master
 heroku run python manage.py migrate
 ```
 
-## Para fazer deploy no Heroku
+## Para fazer deploy no Heroku?
 
 ```
 git push heroku master
 heroku run python manage.py migrate
 ```
 
-#Gerar credenciais do reCaptcha
-Para gerar as credenciais do reCaptcha acesse http://www.google.com/recaptcha 
+# Gerar credenciais do reCaptcha
 
-#Configurar o Google Tag Manager
-Através do Google Tag Manager é possível configurar o Google Analytics e outras ferramentas externas. Para configurar uma conta acesse: https://www.google.com/tagmanager
+Para gerar as credenciais do reCaptcha acesse http://www.google.com/recaptcha
+
+# Configurar o Google Tag Manager
+
+Através do Google Tag Manager é possível configurar o Google Analytics e outras ferramentas externas.
+
+Para configurar uma conta acesse: https://www.google.com/tagmanager
