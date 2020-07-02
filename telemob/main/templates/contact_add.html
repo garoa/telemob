@@ -12,7 +12,7 @@
         <tr>
             <th>E-mail</th>
             <td>
-                <a href="mailto:{{ politician.email }}?body=Como eleitor de seu estado, exijo que VSa. Excelência vote contra o PL215/2015, preservando os conceitos de liberdade de expressão e a privacidade do usuário da Internet consagrados no Marco Civil, uma legislação reconhecida mundialmene como um grande exemplo da democracia brasileira.">
+                <a href="mailto:{{ politician.email }}?body={{ campaign.template_text }}">
                     {{ politician.email }}
                 </a>
             </td>
@@ -87,25 +87,17 @@
 <a name="a-dizer" href="#meios-de-contato">(voltar)</a>
 <h4>Coisas a dizer</h4>
 
-<!--FIXME: isso tem que vir do registro da campanha! -->
 <ul>
-<li>
-Não queremos que o debate político possa ser seja censurado por meio do direito ao esquecimento. Há um forte debate em toda a América Latina em busca da memória e da verdade de nossas nações. E na Europa a possibilidade de remoção não atinge conteúdos, mas apenas endereços (links) em resultados de busca.
-</li>
-<li>Não queremos que sejam aumentadas as exigências de identificação
-para os internautas. A Internet é um espaço público, e exigir
-documentos para navegar é tão absurdo quanto exigir documentos para
-sair na rua.</li>
-<li>Exigir documentos para acessar a Internet nunca vai impedir o seu
-mau uso por criminosos, que podem facilmente forjar números de
-identidade, mas vai inibir o uso da rede para a manifestação
-democrática.</li>
+    {% for argument in campaign.argument_set.all %}
+        <li>{{ argument.text }}</li>
+    {% endfor %}
 </ul>
 
 <a name="modelo-texto" href="#meios-de-contato">(voltar)</a>
 <h4>Modelo de texto para telegrama, fax ou e-mail</h4>
 
-    <blockquote>Como eleitor de seu estado, requeiro expressamente que VSa. Excelência vote contra o PL215/2015, preservando os conceitos de liberdade de expressão e a privacidade do usuário da Internet consagrados no Marco Civil, uma legislação reconhecida mundialmene como um grande exemplo da democracia brasileira.
+    <blockquote>
+        {{ campaign.template_text }}
     </blockquote>
 
 

@@ -7,12 +7,18 @@ class Campaign(models.Model):
     description = models.TextField('Descrição da Campanha')
     date_created = models.DateField('Criado em', auto_now_add=True)
     last_updated = models.DateField('Última atualização em', auto_now=True)
+    template_text = models.TextField('Template para telegrama, fax, email')
 
     class Meta:
         verbose_name = 'Campanha'
 
     def __unicode__(self):
         return self.name
+
+
+class Argument(models.Model):
+    campaign = models.ForeignKey('Campaign', verbose_name='Campanha')
+    text = models.TextField('Texto do argumento')
 
 
 class Politician(models.Model):
