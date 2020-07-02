@@ -12,12 +12,12 @@ class Campaign(models.Model):
     class Meta:
         verbose_name = 'Campanha'
 
-    def __unicode__(self):
+    def __str__(self):
         return self.name
 
 
 class Argument(models.Model):
-    campaign = models.ForeignKey('Campaign', verbose_name='Campanha')
+    campaign = models.ForeignKey('Campaign', verbose_name='Campanha', on_delete=models.CASCADE)
     text = models.TextField('Texto do argumento')
 
 
@@ -79,7 +79,7 @@ class Politician(models.Model):
     class Meta:
         verbose_name = 'Político'
 
-    def __unicode__(self):
+    def __str__(self):
         return self.name
 
 
@@ -129,7 +129,7 @@ class Contact(models.Model):
     class Meta:
         verbose_name = 'Contato'
 
-    def __unicode__(self):
+    def __str__(self):
         return '%s - %s' % (self.campaign.name, self.politician.name)
 
 class HelpText(models.Model):
@@ -143,5 +143,5 @@ class HelpText(models.Model):
         verbose_name = 'Texto de Ajuda'
         verbose_name_plural = 'Textos de Ajuda'
 
-    def __unicode__(self):
+    def __str__(self):
         return self.name
