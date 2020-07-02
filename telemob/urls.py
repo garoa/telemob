@@ -1,13 +1,8 @@
-from django.conf.urls import patterns, include, url
-
 from django.contrib import admin
-admin.autodiscover()
+from django.urls import include, path
 
-urlpatterns = patterns('',
-    # Examples:
-    # url(r'^$', 'telemob.views.home', name='home'),
-    # url(r'^blog/', include('blog.urls')),
 
-    url(r'^admin/', include(admin.site.urls)),
-    url(r'', include('telemob.main.urls')),
-)
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('', include('telemob.main.urls')),
+]

@@ -1,6 +1,3 @@
-# -*- coding: utf-8 -*-
-from __future__ import unicode_literals
-
 from django.db import models
 from localflavor.br.br_states import STATE_CHOICES
 
@@ -117,8 +114,8 @@ class Contact(models.Model):
         ),
     )
 
-    politician = models.ForeignKey(Politician, verbose_name='Político')
-    campaign = models.ForeignKey(Campaign, verbose_name='Campanha')
+    politician = models.ForeignKey(Politician, verbose_name='Político', on_delete=models.CASCADE)
+    campaign = models.ForeignKey(Campaign, verbose_name='Campanha', on_delete=models.CASCADE)
     contacted_by = models.CharField(verbose_name='Contato via', choices=CONTACT_CHOICES, max_length=10)
     result = models.CharField(verbose_name='Resultado do contato', choices=RESULT_CHOICES, max_length=10, blank=True, null=True)
     date_created = models.DateField('Criado em', auto_now_add=True)
@@ -130,7 +127,7 @@ class Contact(models.Model):
         return '%s - %s' % (self.campaign.name, self.politician.name)
 
 class HelpText(models.Model):
-    campaign = models.ForeignKey(Campaign, verbose_name='Texto de ajuda para a campanha')
+    campaign = models.ForeignKey(Campaign, verbose_name='Texto de ajuda para a campanha', on_delete=models.CASCADE)
     name = models.CharField('Nome da Ajuda', max_length=150)
     description = models.TextField('Texto de Ajuda')
     date_created = models.DateField('Criado em', auto_now_add=True)

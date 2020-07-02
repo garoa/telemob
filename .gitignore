@@ -4,3 +4,4 @@
 .env
 mng.sh
 .vagrant/
+staticfiles/
