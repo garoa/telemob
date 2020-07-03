@@ -7,12 +7,18 @@ class Campaign(models.Model):
     description = models.TextField('Descrição da Campanha')
     date_created = models.DateField('Criado em', auto_now_add=True)
     last_updated = models.DateField('Última atualização em', auto_now=True)
+    template_text = models.TextField('Template para telegrama, fax, email')
 
     class Meta:
         verbose_name = 'Campanha'
 
-    def __unicode__(self):
+    def __str__(self):
         return self.name
+
+
+class Argument(models.Model):
+    campaign = models.ForeignKey('Campaign', verbose_name='Campanha', on_delete=models.CASCADE)
+    text = models.TextField('Texto do argumento')
 
 
 class Politician(models.Model):
@@ -73,7 +79,7 @@ class Politician(models.Model):
     class Meta:
         verbose_name = 'Político'
 
-    def __unicode__(self):
+    def __str__(self):
         return self.name
 
 
@@ -123,7 +129,7 @@ class Contact(models.Model):
     class Meta:
         verbose_name = 'Contato'
 
-    def __unicode__(self):
+    def __str__(self):
         return '%s - %s' % (self.campaign.name, self.politician.name)
 
 class HelpText(models.Model):
@@ -137,5 +143,5 @@ class HelpText(models.Model):
         verbose_name = 'Texto de Ajuda'
         verbose_name_plural = 'Textos de Ajuda'
 
-    def __unicode__(self):
+    def __str__(self):
         return self.name

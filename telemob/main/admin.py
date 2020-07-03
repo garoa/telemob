@@ -1,6 +1,10 @@
 from django.contrib import admin
 
-from .models import Campaign, Contact, Politician, HelpText
+from .models import Argument, Campaign, Contact, Politician, HelpText
+
+
+class ArgumentInline(admin.TabularInline):
+    model = Argument
 
 
 class CampaignAdmin(admin.ModelAdmin):
@@ -10,6 +14,7 @@ class CampaignAdmin(admin.ModelAdmin):
         'description',
         'date_created'
     )
+    inlines = [ArgumentInline]
 
 class ContactAdmin(admin.ModelAdmin):
 
