@@ -1,4 +1,4 @@
-"""
+'''
 Django settings for telemob project.
 
 For more information on this file, see
@@ -6,7 +6,7 @@ https://docs.djangoproject.com/en/1.6/topics/settings/
 
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/1.6/ref/settings/
-"""
+'''
 
 from pathlib import Path
 
@@ -59,13 +59,11 @@ ROOT_URLCONF = 'telemob.urls'
 
 TEMPLATES = [
     {
-        "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [
-            BASE_DIR / 'telemob' / 'templates',
-        ],
-        "APP_DIRS": True,
-        "OPTIONS": {
-            "context_processors": [
+        'BACKEND': 'django.template.backends.django.DjangoTemplates',
+        'DIRS': [BASE_DIR / 'telemob' / 'templates',],
+        'APP_DIRS': True,
+        'OPTIONS': {
+            'context_processors': [
                 'django.contrib.auth.context_processors.auth',
                 'django.template.context_processors.debug',
                 'django.contrib.messages.context_processors.messages',
@@ -74,7 +72,7 @@ TEMPLATES = [
                 'django.template.context_processors.static',
                 'django.template.context_processors.tz',
                 'django.template.context_processors.request',
-                'telemob.main.context_processors.google_tag_manager'
+                'telemob.main.context_processors.google_tag_manager',
             ],
         },
     },
@@ -88,9 +86,8 @@ WSGI_APPLICATION = 'telemob.wsgi.application'
 
 DATABASES = {
     'default': config(
-        'DATABASE_URL',
-        default='sqlite:///' + str(BASE_DIR / 'db.sqlite3'),
-        cast=db_url),
+        'DATABASE_URL', default='sqlite:///' + str(BASE_DIR / 'db.sqlite3'), cast=db_url
+    ),
 }
 
 # Internationalization
@@ -112,35 +109,20 @@ USE_TZ = True
 
 STATIC_ROOT = BASE_DIR / 'staticfiles'
 STATIC_URL = '/static/'
-STATICFILES_DIRS = (
-    BASE_DIR / 'telemob' / 'static',
-)
+STATICFILES_DIRS = (BASE_DIR / 'telemob' / 'static',)
 
 SESSION_EXPIRE_AT_BROWSER_CLOSE = True
 
 SOUTH_TESTS_MIGRATE = False
 
 # reCaptcha credentials
-RECAPTCHA_PUBLIC_KEY = config(
-    'RECAPTCHA_PUBLIC_KEY',
-    default='1234567897132123'
-)
+RECAPTCHA_PUBLIC_KEY = config('RECAPTCHA_PUBLIC_KEY', default='1234567897132123')
 
 # Google Tag Manager
-GTM_CONTAINER = config(
-    'GTM_CONTAINER',
-    default=None
-)
+GTM_CONTAINER = config('GTM_CONTAINER', default=None)
 
-RECAPTCHA_PRIVATE_KEY = config(
-    'RECAPTCHA_PRIVATE_KEY',
-    default='1234567897132123'
-)
+RECAPTCHA_PRIVATE_KEY = config('RECAPTCHA_PRIVATE_KEY', default='1234567897132123')
 
 if DEBUG:
     EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
-    CACHES = {
-        'default': {
-            'BACKEND': 'django.core.cache.backends.locmem.LocMemCache',
-        }
-    }
+    CACHES = {'default': {'BACKEND': 'django.core.cache.backends.locmem.LocMemCache',}}

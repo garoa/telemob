@@ -14,11 +14,9 @@ def index(request):
 
     return render(
         request,
-        'index.html', {
-            'campaign': campaign,
-            'uf_list': STATE_CHOICES,
-            'count_contacts': contacts
-        })
+        'index.html',
+        {'campaign': campaign, 'uf_list': STATE_CHOICES, 'count_contacts': contacts},
+    )
 
 
 def politician_list(request, campaign_id, uf=None):
@@ -28,16 +26,19 @@ def politician_list(request, campaign_id, uf=None):
     else:
         politician_list = Politician.objects.all()
 
-    politician_list = politician_list.annotate(
-        contacts=Count('contact')).order_by('contacts', 'parliamentary_name')
+    politician_list = politician_list.annotate(contacts=Count('contact')).order_by(
+        'contacts', 'parliamentary_name'
+    )
 
     return render(
         request,
-        'politician_list.html', {
+        'politician_list.html',
+        {
             'politician_list': politician_list,
             'campaign': campaign,
-            'uf_list': STATE_CHOICES
-        })
+            'uf_list': STATE_CHOICES,
+        },
+    )
 
 
 def report_contact(request, campaign_id, politician_id):
@@ -49,17 +50,16 @@ def report_contact(request, campaign_id, politician_id):
 
     if form.is_valid():
         form.save()
-        msg = ('Seu contato foi registrado, grato por participar! '
-               'Se tiver tempo, aproveite para contatar outro '
-               'parlamentar agora mesmo.')
+        msg = (
+            'Seu contato foi registrado, grato por participar! '
+            'Se tiver tempo, aproveite para contatar outro '
+            'parlamentar agora mesmo.'
+        )
         messages.success(request, msg)
-        return redirect('politician_list', campaign_id=campaign.pk,
-            uf=politician.uf)
+        return redirect('politician_list', campaign_id=campaign.pk, uf=politician.uf)
 
     return render(
         request,
-        'contact_add.html', {
-            'form': form,
-            'politician': politician,
-            'campaign': campaign
-        })
+        'contact_add.html',
+        {'form': form, 'politician': politician, 'campaign': campaign},
+    )

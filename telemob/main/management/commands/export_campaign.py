@@ -1,6 +1,7 @@
 from django.core.management.base import BaseCommand, CommandError
 from telemob.main.models import Campaign
 
+
 class Command(BaseCommand):
     args = 'campaign_id'
     help = 'Exports denormalized campaign data for analysis'
@@ -19,12 +20,17 @@ class Command(BaseCommand):
         self.stdout.write('# campaign name: ' + campaign.name)
         for contact in campaign.contact_set.all():
             pol = contact.politician
-            columns = [str(contact.pk), pol.uf, pol.political_party,
-                contact.contacted_by, contact.result, str(contact.date_created),
-                pol.parliamentary_name]
+            columns = [
+                str(contact.pk),
+                pol.uf,
+                pol.political_party,
+                contact.contacted_by,
+                contact.result,
+                str(contact.date_created),
+                pol.parliamentary_name,
+            ]
 
             self.stdout.write('\t'.join(columns))
-
 
 
 """

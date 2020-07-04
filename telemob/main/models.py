@@ -17,7 +17,9 @@ class Campaign(models.Model):
 
 
 class Argument(models.Model):
-    campaign = models.ForeignKey('Campaign', verbose_name='Campanha', on_delete=models.CASCADE)
+    campaign = models.ForeignKey(
+        'Campaign', verbose_name='Campanha', on_delete=models.CASCADE
+    )
     text = models.TextField('Texto do argumento')
 
 
@@ -36,9 +38,9 @@ class Politician(models.Model):
         ('PMN', 'PMN - Partido Da Mobilização Nacional'),
         ('PRP', 'PRP - Partido Republicano Progressista'),
         ('PPS', 'PPS - Partido Popular Socialista'),
-        ('PV',  'PV - Partido Verde'),
-        ('PTdoB','PTdoB - Partido Trabalhista Do Brasil'),
-        ('PP',  'PP - Partido Progressista'),
+        ('PV', 'PV - Partido Verde'),
+        ('PTdoB', 'PTdoB - Partido Trabalhista Do Brasil'),
+        ('PP', 'PP - Partido Progressista'),
         ('PSTU', 'PSTU - Partido Socialista Dos Trabalhadores Unificado'),
         ('PCB', 'PCB - Partido Comunista Brasileiro'),
         ('PRTB', 'PRTB - Partido Renovador Trabalhista Brasileiro'),
@@ -49,7 +51,7 @@ class Politician(models.Model):
         ('PSL', 'PSL - Partido Social Liberal'),
         ('PRB', 'PRB - Partido Republicano Brasileiro'),
         ('PSOL', 'PSOL - Partido Socialismo E Liberdade'),
-        ('PR',  'PR - Partido Da República'),
+        ('PR', 'PR - Partido Da República'),
         ('PSD', 'PSD - Partido Social Democrático'),
         ('PPL', 'PPL - Partido Pátria Livre'),
         ('PEN', 'PEN - Partido Ecológico Nacional'),
@@ -57,11 +59,7 @@ class Politician(models.Model):
         ('SDD ', 'SDD - Solidariedade'),
     )
 
-    CATEGORY_CHOICES = (
-        ('T', 'Titular'),
-        ('S', 'Suplente'),
-        ('E', 'Efetivo')
-    )
+    CATEGORY_CHOICES = (('T', 'Titular'), ('S', 'Suplente'), ('E', 'Efetivo'))
 
     name = models.CharField('Nome', max_length=150)
     parliamentary_name = models.CharField('Nome Parlamentar', max_length=150)
@@ -89,41 +87,59 @@ class Contact(models.Model):
         ('tel', 'Telefone'),
         ('telegram', 'Telegrama via Web'),
         ('fax', 'Fax'),
-        ('email', 'E-mail')
+        ('email', 'E-mail'),
     )
 
     RESULT_CHOICES = (
-        ('Telefonei', (
+        (
+            'Telefonei',
+            (
                 ('10', 'Falei com o(a) Deputado(a) em pessoa.'),
                 ('11', 'Falei com outra pessoa.'),
                 ('12', 'Deixei recado em uma máquina.'),
                 ('13', 'Fone: número ocupado'),
                 ('14', 'Fone: ninguém atendeu.'),
-                ('15', 'Fone: número inexistente ou outra falha.')
-            )
+                ('15', 'Fone: número inexistente ou outra falha.'),
+            ),
         ),
-        ('Enviei telegrama', (
-                ('20', 'Nada a reportar: correio vai entregar no gabinete!'),
-            )
+        (
+            'Enviei telegrama',
+            (('20', 'Nada a reportar: correio vai entregar no gabinete!'),),
         ),
-        ('Enviei fax', (
+        (
+            'Enviei fax',
+            (
                 ('30', 'Fax: transmissão bem sucedida.'),
                 ('31', 'Fax: número ocupado.'),
                 ('32', 'Fax: não atendeu.'),
-                ('33', 'Fax: número inexistente ou outra falha.')
-            )
+                ('33', 'Fax: número inexistente ou outra falha.'),
+            ),
         ),
-        ('Enviei e-mail', (
+        (
+            'Enviei e-mail',
+            (
                 ('40', 'E-mail enviado e não voltou, tomara que leiam.'),
                 ('41', 'E-mail voltou com erro.'),
-            )
+            ),
         ),
     )
 
-    politician = models.ForeignKey(Politician, verbose_name='Político', on_delete=models.CASCADE)
-    campaign = models.ForeignKey(Campaign, verbose_name='Campanha', on_delete=models.CASCADE)
-    contacted_by = models.CharField(verbose_name='Contato via', choices=CONTACT_CHOICES, max_length=10)
-    result = models.CharField(verbose_name='Resultado do contato', choices=RESULT_CHOICES, max_length=10, blank=True, null=True)
+    politician = models.ForeignKey(
+        Politician, verbose_name='Político', on_delete=models.CASCADE
+    )
+    campaign = models.ForeignKey(
+        Campaign, verbose_name='Campanha', on_delete=models.CASCADE
+    )
+    contacted_by = models.CharField(
+        verbose_name='Contato via', choices=CONTACT_CHOICES, max_length=10
+    )
+    result = models.CharField(
+        verbose_name='Resultado do contato',
+        choices=RESULT_CHOICES,
+        max_length=10,
+        blank=True,
+        null=True,
+    )
     date_created = models.DateField('Criado em', auto_now_add=True)
 
     class Meta:
@@ -132,8 +148,13 @@ class Contact(models.Model):
     def __str__(self):
         return '%s - %s' % (self.campaign.name, self.politician.name)
 
+
 class HelpText(models.Model):
-    campaign = models.ForeignKey(Campaign, verbose_name='Texto de ajuda para a campanha', on_delete=models.CASCADE)
+    campaign = models.ForeignKey(
+        Campaign,
+        verbose_name='Texto de ajuda para a campanha',
+        on_delete=models.CASCADE,
+    )
     name = models.CharField('Nome da Ajuda', max_length=150)
     description = models.TextField('Texto de Ajuda')
     date_created = models.DateField('Criado em', auto_now_add=True)

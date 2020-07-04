@@ -56,7 +56,7 @@ def rows(thelist, n):
 
     if list_len % n != 0:
         split += 1
-    return [thelist[split * i:split * (i + 1)] for i in range(n)]
+    return [thelist[split * i : split * (i + 1)] for i in range(n)]
 
 
 def rows_distributed(thelist, n):
@@ -152,6 +152,7 @@ def columns(thelist, n):
         split += 1
     return [thelist[i::split] for i in range(split)]
 
+
 register.filter(rows)
 register.filter(rows_distributed)
 register.filter(columns)
@@ -159,7 +160,9 @@ register.filter(columns)
 
 def _test():
     import doctest
+
     doctest.testmod()
+
 
 if __name__ == "__main__":
     _test()

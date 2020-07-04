@@ -9,12 +9,9 @@ class ArgumentInline(admin.TabularInline):
 
 class CampaignAdmin(admin.ModelAdmin):
 
-    list_display = (
-        'name',
-        'description',
-        'date_created'
-    )
+    list_display = ('name', 'description', 'date_created')
     inlines = [ArgumentInline]
+
 
 class ContactAdmin(admin.ModelAdmin):
 
@@ -24,6 +21,7 @@ class ContactAdmin(admin.ModelAdmin):
         'contacted_by',
     )
 
+
 class PoliticianAdmin(admin.ModelAdmin):
 
     list_display = (
@@ -31,6 +29,7 @@ class PoliticianAdmin(admin.ModelAdmin):
         'uf',
         'political_party',
     )
+
 
 class HelpTextAdmin(admin.ModelAdmin):
 

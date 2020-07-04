@@ -5,8 +5,9 @@
 import json
 import csv
 
-NOMES_CAMPOS = ('nome_parlamentar partido uf categoria '
-                'anexo gabinete fone fax email nome_civil').split()
+NOMES_CAMPOS = (
+    'nome_parlamentar partido uf categoria ' 'anexo gabinete fone fax email nome_civil'
+).split()
 
 """
 [0   'ZOINHO',

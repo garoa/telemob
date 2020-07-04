@@ -5,19 +5,23 @@ from captcha.fields import ReCaptchaField
 
 from .models import Contact
 
+
 class ContactForm(forms.ModelForm):
 
     # FIXME: Aguardando django-recaptcha aceitar o PR com tradução pt-br
-    captcha = ReCaptchaField(error_messages={
-        'captcha_invalid': 'Incorreto, tente novamente'
-    })
+    captcha = ReCaptchaField(
+        error_messages={'captcha_invalid': 'Incorreto, tente novamente'}
+    )
 
     class Meta:
         model = Contact
-        fields = ('contacted_by', 'result', )
+        fields = (
+            'contacted_by',
+            'result',
+        )
 
     def clean_result(self):
-        #FIXME: os ranges e números abaixo dependem de RESULT_CHOICES em models.py
+        # FIXME: os ranges e números abaixo dependem de RESULT_CHOICES em models.py
         contacted_by = self.cleaned_data.get('contacted_by')
         try:
             result = int(self.cleaned_data.get('result'))
@@ -30,12 +34,9 @@ class ContactForm(forms.ModelForm):
                 )
 
         if not contacted_by:
-            raise forms.ValidationError(
-                'Por favor, informe o meio de contato.'
-            )
+            raise forms.ValidationError('Por favor, informe o meio de contato.')
 
-
-        #FIXME: os ranges e números abaixo dependem de RESULT_CHOICES em models.py
+        # FIXME: os ranges e números abaixo dependem de RESULT_CHOICES em models.py
         if contacted_by == 'tel' and result not in range(10, 16):
             raise forms.ValidationError(
                 'Este resultado não faz sentido se o contato foi por telefone.'

@@ -29,6 +29,21 @@ vagrant up
 vagrant ssh
 ```
 
+## Docker
+
+Se preferir usar docker, basta digitar:
+
+```
+pip install docker-compose
+docker-compose up -d
+```
+
+## Crie um super usuário
+
+```
+docker-compose run app python manage.py createsuperuser
+```
+
 ## Rodando o projeto
 
 ```

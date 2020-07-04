@@ -14,15 +14,33 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name='campaign',
             name='template_text',
-            field=models.TextField(default='*** FORNEÇA UM TEXTO PARA TEMPLATE DA CAMPANHA ***', verbose_name='Template para telegrama, fax, email'),
+            field=models.TextField(
+                default='*** FORNEÇA UM TEXTO PARA TEMPLATE DA CAMPANHA ***',
+                verbose_name='Template para telegrama, fax, email',
+            ),
             preserve_default=False,
         ),
         migrations.CreateModel(
             name='Argument',
             fields=[
-                ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
+                (
+                    'id',
+                    models.AutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name='ID',
+                    ),
+                ),
                 ('text', models.TextField(verbose_name='Texto do argumento')),
-                ('campaign', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='main.Campaign', verbose_name='Campanha')),
+                (
+                    'campaign',
+                    models.ForeignKey(
+                        on_delete=django.db.models.deletion.CASCADE,
+                        to='main.Campaign',
+                        verbose_name='Campanha',
+                    ),
+                ),
             ],
         ),
     ]
