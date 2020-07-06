@@ -32,21 +32,21 @@ NOMES_CAMPOS = (
 ).split()
 
 SAMPLE = {
-    "pk": 1,
-    "model": "main.politician",
-    "fields": {
-        "category": "titular",
-        "fax": "2222-2222",
-        "political_party": "PMDB",
-        "tel": "1111-1111",
-        "name": "Fulano",
-        "annex": 1,
-        "parliamentary_name": "",
-        "chamber": 234,
-        "date_created": "2014-03-14",
-        "uf": "AC",
-        "email": "e@mail.com",
-        "last_updated": "2014-03-14",
+    'pk': 1,
+    'model': 'main.politician',
+    'fields': {
+        'category': 'titular',
+        'fax': '2222-2222',
+        'political_party': 'PMDB',
+        'tel': '1111-1111',
+        'name': 'Fulano',
+        'annex': 1,
+        'parliamentary_name': '',
+        'chamber': 234,
+        'date_created': '2014-03-14',
+        'uf': 'AC',
+        'email': 'e@mail.com',
+        'last_updated': '2014-03-14',
     },
 }
 

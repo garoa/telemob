@@ -1,4 +1,4 @@
-from django.core.management.base import BaseCommand, CommandError
+from django.core.management.base import BaseCommand
 from telemob.main.models import Campaign
 
 
@@ -31,17 +31,3 @@ class Command(BaseCommand):
             ]
 
             self.stdout.write('\t'.join(columns))
-
-
-"""
-        for poll_id in args:
-            try:
-                poll = Poll.objects.get(pk=int(poll_id))
-            except Poll.DoesNotExist:
-                raise CommandError('Poll "%s" does not exist' % poll_id)
-
-            poll.opened = False
-            poll.save()
-
-            self.stdout.write('Successfully closed poll "%s"' % poll_id)
-"""

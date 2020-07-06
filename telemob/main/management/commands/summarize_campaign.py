@@ -1,6 +1,6 @@
 import collections
 
-from django.core.management.base import BaseCommand, CommandError
+from django.core.management.base import BaseCommand
 from django.db.models import Count
 from localflavor.br.br_states import STATE_CHOICES
 
@@ -59,14 +59,3 @@ class Command(BaseCommand):
         for res in qry:
             text = results.get(res['result'], 'n/a')
             wr('%3d\t%s\n' % (res['result__count'], text))
-
-
-"""
-        for contact in campaign.contact_set.all():
-            pol = contact.politician
-            columns = [str(contact.pk), pol.uf, pol.political_party,
-                contact.contacted_by, contact.result, str(contact.date_created),
-                pol.parliamentary_name]
-
-            self.stdout.write('\t'.join(columns))
-"""

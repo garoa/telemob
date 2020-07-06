@@ -1,5 +1,4 @@
 from django.db.models import Count
-from django.template import RequestContext
 from localflavor.br.br_states import STATE_CHOICES
 from django.shortcuts import get_object_or_404, redirect, render
 from django.contrib import messages
