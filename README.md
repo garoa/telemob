@@ -34,8 +34,9 @@ vagrant ssh
 Se preferir usar docker, basta digitar:
 
 ```
-pip install docker-compose
-docker-compose up -d
+$ pip install docker-compose
+$ docker-compose run --rm app python manage.py migrate
+$ docker-compose up -d
 ```
 
 ## Crie um super usuário
