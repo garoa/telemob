@@ -41,7 +41,7 @@ docker-compose up -d
 ## Crie um super usuário
 
 ```
-docker-compose run app python manage.py createsuperuser
+docker-compose run --rm app python manage.py createsuperuser
 ```
 
 ## Rodando o projeto
